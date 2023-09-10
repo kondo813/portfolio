@@ -10,6 +10,12 @@ main{
   font-size: 40px;
   margin-top: 80px;
 }
+@media screen and (max-width: 767px){
+  .head {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
 .line {
   background: #654b24;
   width: 55px;
@@ -20,6 +26,11 @@ main{
   font-size: 16px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px){
+  .head-ja {
+    margin-bottom: 20px;
+  }
+}
 .news{
   text-align: center;
 }
@@ -28,10 +39,20 @@ main{
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 767px){
+  .article {display:block}
+}
 .article img{
   width: 300px;
   height: 210px;
   margin: auto 30px;
+}
+@media screen and (max-width: 767px){
+  .article img {
+    width: 280px;
+    height: 190px;
+    margin: auto 30px;
+  }
 }
 .article-text{
   font-size: 17px;
@@ -42,6 +63,13 @@ main{
   text-align: left;
   display: inline-block;
 }
+@media screen and (max-width: 767px){
+  .article-text {
+    font-size: 14px;
+    width: 350px;
+    margin-right: 0px;
+  }
+}
 .article-text .date{
   font-size: 15px;
 }
@@ -49,11 +77,22 @@ main{
   font-size: 21px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px){
+  .article-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
 .article-line {
   background: #4d3d2692;
   width: 870px;
   height: 1.5px;
   margin: -20px auto 20px;
+}
+@media screen and (max-width: 767px){
+  .article-line {
+    width: 370px;
+  }
 }
 .sns-follow{
   display: inline-block;

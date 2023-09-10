@@ -7,6 +7,14 @@ header{
   height: 130px;
   border-bottom: 1px solid #42210B;
 }
+@media screen and (max-width: 767px){
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 54px;
+    border-bottom: 1px solid #42210B;
+  }
+}
 body{
   font-family: HiraMinProN-W6, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
   color: #42210B;
@@ -15,15 +23,40 @@ body{
   width: 630px;
   margin-top: 2px;
 }
+@media screen and (max-width: 767px){
+  .logo {display:none}
+}
+.logo2{
+  width: 50px;
+  margin-top: 2px;
+  margin-left: -70px;
+}
+@media screen and (min-width: 767px){
+  .logo2 {display:none}
+}
 .main-nav{
   display: flex;
   list-style: none;
   margin-top: 50px;
   margin-right: 34px;
 }
+@media screen and (max-width: 767px){
+  .main-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 16px;
+    margin-right: 34px;
+  }
+}
 .main-nav li{
   margin-left: 36px;
   font-size: 20px;
+}
+@media screen and (max-width: 767px){
+  .main-nav li{
+    margin-left: 16px;
+    font-size: 16px;
+  }
 }
 .main-nav a{
   color: #42210B;

@@ -9,27 +9,60 @@ main img{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-body{
-  text-align: center;
+@media screen and (max-width: 767px){
+  main img {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom:-3px;
+  }
 }
 main{
+  text-align: center;
   margin-top: 40px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px){
+  main {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+  }
+}
 main h3{
   font-size: 35px;
+}
+@media screen and (max-width: 767px){
+  main h3{
+    font-size: 25px;
+  }
 }
 main p{
   text-align: left;
   font-size: 20px;
   margin-top: 10px;
 }
+@media screen and (max-width: 767px){
+  main p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
 .about-us{
   display: flex;
   margin: 0px 2%;
 }
+@media screen and (max-width: 767px){
+  .about-us {display:block}
+}
 .about-us img{
   margin-right: 30px;
+}
+@media screen and (max-width: 767px){
+  .about-us img {
+    margin-right: 0px;
+  }
 }
 .about-us p{
   text-align: left;
@@ -42,8 +75,16 @@ main p{
   flex-direction: row-reverse;
   margin: 0px 4%;
 }
+@media screen and (max-width: 767px){
+  .particular-about1 {display:block}
+}
 .particular-about1 img{
   margin-left: 30px;
+}
+@media screen and (max-width: 767px){
+  .particular-about1 img{
+    margin-left: 0px;
+  }
 }
 .particular-about1 p{
   text-align: left;
@@ -52,8 +93,16 @@ main p{
   display: flex;
   margin: 0px 4%;
 }
+@media screen and (max-width: 767px){
+  .particular-about2 {display:block}
+}
 .particular-about2 img{
   margin-right: 30px;
+}
+@media screen and (max-width: 767px){
+  .particular-about2 img{
+    margin-right: 0px;
+  }
 }
 .particular-about2 p{
   text-align: left;
@@ -66,8 +115,16 @@ main p{
   flex-direction: row-reverse;
   margin: 0px 4%;
 }
+@media screen and (max-width: 767px){
+  .cup-taster {display:block}
+}
 .cup-taster img{
   margin-left: 30px;
+}
+@media screen and (max-width: 767px){
+  .cup-taster img{
+    margin-left: 0px;
+  }
 }
 .cup-taster p{
   text-align: left;
@@ -79,8 +136,16 @@ main p{
   display: flex;
   margin: 0px 4%;
 }
+@media screen and (max-width: 767px){
+  .barista {display:block}
+}
 .barista img{
   margin-right: 30px;
+}
+@media screen and (max-width: 767px){
+  .barista img{
+    margin-right: 0px;
+  }
 }
 .barista p{
   text-align: left;
@@ -88,7 +153,6 @@ main p{
 .barista-text{
   margin: auto 0px;
 }
-
 .about-us{
   transition: 3s;
   opacity: 0;

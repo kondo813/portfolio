@@ -6,21 +6,52 @@
 main img{
   width: 350px;
 }
+@media screen and (max-width: 767px){
+  main img {
+    width: 260px;
+  }
+}
 main{
   text-align: center;
   margin-bottom: 80px;
+}
+.name {
+  font-size: 16px;
+}
+@media screen and (max-width: 767px){
+  .name {
+    font-size: 13px;
+  }
 }
 .menu-head-food{
   font-size: 40px;
   margin-top: 80px;
 }
+@media screen and (max-width: 767px){
+  .menu-head-food {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+}
 .menu-head-sweets{
   font-size: 40px;
   margin-top: 100px;
 }
+@media screen and (max-width: 767px){
+  .menu-head-sweets {
+    font-size: 30px;
+    margin-top: -10px;
+  }
+}
 .menu-head-drink{
   font-size: 40px;
   margin-top: 100px;
+}
+@media screen and (max-width: 767px){
+  .menu-head-drink {
+    font-size: 30px;
+    margin-top: -10px;
+  }
 }
 .line {
   background: #654b24;
@@ -31,6 +62,12 @@ main{
 .menu-head-ja{
   font-size: 16px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px){
+  .menu-head-ja {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
 }
 .food{
   margin-top: 40px;
@@ -46,6 +83,13 @@ main{
   margin-right: 20px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px){
+  .food-contents {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
 .sweets{
   margin-top: 40px;
   margin-bottom: 30px;
@@ -59,6 +103,13 @@ main{
   margin-top: 10px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px){
+  .sweets-contents {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 }
 .drink{
   margin-top: 40px;
@@ -74,19 +125,33 @@ main{
   margin-right: 20px;
   margin-bottom: 20px;
 }
-
-
+@media screen and (max-width: 767px){
+  .drink-contents {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
 .hover-discription{
-  width: 350px;        /* 画像の横幅（自由に指定） */
+  width: 350px;        
   height: 234px;
-  position: relative;  /* 帯の表示位置の基準とする */
+  position: relative;  
+}
+@media screen and (max-width: 767px){
+  .hover-discription {
+    width: 260px;        
+    height: 190px;
+    position: relative;  
+  }
 }
 .hover-discription img{
   width: 100%;
+  height: 100%;
   margin: 0;
 }
 .hover-discription p{
   color: #fff;
+  font-size: 15px;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -101,13 +166,25 @@ main{
   text-align: left;
   padding: 6px;
 }
+@media screen and (max-width: 767px){
+  .hover-discription p {
+    font-size: 13px;
+  }
+}
 .hover-discription:hover p{
   opacity: 1;   
 }
 .hover-discription-drink{
-  width: 350px;        /* 画像の横幅（自由に指定） */
+  width: 350px;        
   height: 350px;
-  position: relative;  /* 帯の表示位置の基準とする */
+  position: relative; 
+}
+@media screen and (max-width: 767px){
+  .hover-discription-drink {
+    width: 260px;        
+    height: 260px;
+    position: relative;  
+  }
 }
 .hover-discription-drink img{
   width: 100%;
@@ -115,6 +192,7 @@ main{
 }
 .hover-discription-drink p{
   color: #fff;
+  font-size: 15px;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -128,6 +206,11 @@ main{
   justify-content: start;
   text-align: left;
   padding: 6px;
+}
+@media screen and (max-width: 767px){
+  .hover-discription-drink p{
+    font-size: 13px;
+  }
 }
 .hover-discription-drink:hover p{
   opacity: 1;   
