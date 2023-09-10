@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <title>TEDDY'S CAFE About</title>
+    <meta name="discription" content="TEDDY'S CAFEについて">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html"><img class="logo" src="images/logo-header.svg" alt="TEDDY'S CAFEロゴ"></a></h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="about.html" class="nav-about">About</a></li>
+          <li><a href="menu.html" class="nav-menu">Menu</a></li>
+          <li><a href="index.html#access-heading" class="nav-access">Access</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="about-us">
+        <script>
+          $(window).on('load scroll', function (){
+            var box = $('.about-us');
+            var animated = 'animated';
+            box.each(function(){
+              var boxOffset = $(this).offset().top;
+              var scrollPos = $(window).scrollTop();
+              var wh = $(window).height();
+              //画面内のどの位置で処理を実行するかで「100」の値を変更
+              if(scrollPos > boxOffset - wh + 100 ){
+                $(this).addClass(animated);
+              }
+            });
+            });
+        </script>
+        <img src="images/about/rr-abrot-pNIgH0y3upM-unsplash.jpg">
+        <div class="about-text">
+          <h3>TEDDY'S CAFE</h3>
+          <p>TEDDY'S CAFEは最高の１杯と共にひとときの安らぎを提供するカフェです。<br>
+            大切な人と、友人と、一人でゆったり。素敵な空間で癒されてみませんか？</p>
+        </div>
+      </article>
+      <article class="particular-about1">
+        <script>
+          $(window).on('load scroll', function (){
+            var box = $('.particular-about1');
+            var animated = 'animated';
+            box.each(function(){
+              var boxOffset = $(this).offset().top;
+              var scrollPos = $(window).scrollTop();
+              var wh = $(window).height();
+              //画面内のどの位置で処理を実行するかで「100」の値を変更
+              if(scrollPos > boxOffset - wh + 100 ){
+                $(this).addClass(animated);
+              }
+            });
+            });
+        </script>
+        <img src="images/about/coffee-g25896778d_1920.jpg">
+        <div class="particilar-about-text">
+          <h3>こだわり①</h3>
+          <p>TEDDY'S CAFEでは一流のカップテイスターによって厳選されたコーヒー豆のみを取り扱っております。<br>
+            品質、鮮度、焙煎に至るまであらゆる点でこだわり抜いたものを世界各国から輸入しています。<br>
+            原産国、生産エリア、気候や栽培方法によって異なるとっておきのコーヒーをお楽しみください。
+        </div>
+      </article>
+      <article class="particular-about2">
+        <script>
+          $(window).on('load scroll', function (){
+            var box = $('.particular-about2');
+            var animated = 'animated';
+            box.each(function(){
+              var boxOffset = $(this).offset().top;
+              var scrollPos = $(window).scrollTop();
+              var wh = $(window).height();
+              //画面内のどの位置で処理を実行するかで「100」の値を変更
+              if(scrollPos > boxOffset - wh + 100 ){
+                $(this).addClass(animated);
+              }
+            });
+            });
+        </script>
+        <img src="images/about/joey-huang-m3gnv-H69Rs-unsplash.jpg">
+        <div class="particilar-about-text">
+          <h3>こだわり②</h3>
+          <p>コーヒーは同じコーヒー豆でも淹れ方一つで味が変わるとても繊細で面白い飲み物です。<br>
+            当店では最適な状態で味わっていただきたいという想いから、コーヒー豆の種類によって抽出方法を変えています。<br>
+            お客様のお好みに応じて、その日の気分に合った一杯をご提供いたします。お気軽にバリスタまでお申し付けください。</p>
+        </div>
+      </article>
+      <article class="cup-taster">
+        <script>
+          $(window).on('load scroll', function (){
+            var box = $('.cup-taster');
+            var animated = 'animated';
+            box.each(function(){
+              var boxOffset = $(this).offset().top;
+              var scrollPos = $(window).scrollTop();
+              var wh = $(window).height();
+              //画面内のどの位置で処理を実行するかで「100」の値を変更
+              if(scrollPos > boxOffset - wh + 100 ){
+                $(this).addClass(animated);
+              }
+            });
+            });
+        </script>
+        <img src="images/about/coffee-g0b0ecde67_1280.jpg">
+        <div class="cup-taster-text">
+          <h3>カップテイスターとは</h3>
+          <p>コーヒー生豆を売買するにあたって、産地や銘柄ごとの品質を鑑定するために、味覚検査を行う人のことを言います。<br>
+            カップテイスターはあらゆるコーヒーに精通しており、日本酒の利き酒師やワインのソムリエにあたる存在です。<br>
+            香り、酸味、甘味、苦味、コクを確認し、コーヒーの欠点となる異臭、異味がないかどうかなど、さまざまな味の要素をチェックします。
+          </p>
+        </div>
+        </article>
+        <article class="barista">
+          <script>
+            $(window).on('load scroll', function (){
+              var box = $('.barista');
+              var animated = 'animated';
+              box.each(function(){
+                var boxOffset = $(this).offset().top;
+                var scrollPos = $(window).scrollTop();
+                var wh = $(window).height();
+                //画面内のどの位置で処理を実行するかで「100」の値を変更
+                if(scrollPos > boxOffset - wh + 100 ){
+                  $(this).addClass(animated);
+                }
+              });
+              });
+          </script>
+          </script>
+          <img src="images/about/nathan-dumlao-KixfBEdyp64-unsplash.jpg">
+          <div class="barista-text">
+            <h3>バリスタとは</h3>
+            <p>コーヒー豆の産地ごとの特徴や違い、焙煎やブレンド方法、コーヒーの抽出、エスプレッソマシンの操作やメンテナンス方法、ミルクの泡立て方といった幅広い知識と技術を持っている『コーヒーのスペシャリスト』のことを指します。<br>
+              お客様の好みに応じてコーヒーの温度などを調整したり、快適な空間づくりに配慮するなど、カフェで気持ちよく過ごせる接客もバリスタにとって大切なお仕事です。</p>
+          </div>
+        </article>
+    </main>
+
+    <footer>
+      <small>© 2023 TEDDY'S CAFE. All rights reserved.</small>
+    </footer>
+  </body>
+</html>

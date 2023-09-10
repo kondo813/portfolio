@@ -1,0 +1,46 @@
+a{
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  border-bottom: 1px solid #42210B;
+}
+body{
+  font-family: HiraMinProN-W6, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+  color: #42210B;
+}
+.logo{
+  width: 630px;
+  margin-top: 2px;
+}
+.main-nav{
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+  margin-right: 34px;
+}
+.main-nav li{
+  margin-left: 36px;
+  font-size: 20px;
+}
+.main-nav a{
+  color: #42210B;
+}
+.main-nav a:hover{
+  color:rgba(255, 218, 55, 0.786);
+}
+footer{
+  height: 50px;
+  background-color: #42210B;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+footer small{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}

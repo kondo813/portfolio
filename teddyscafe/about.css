@@ -1,0 +1,126 @@
+.nav-about{
+  border-bottom-style: solid;
+  border-width: 2px;
+  padding-bottom: 5px;
+}
+main img{
+  width: 50%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+body{
+  text-align: center;
+}
+main{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+main h3{
+  font-size: 35px;
+}
+main p{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.about-us{
+  display: flex;
+  margin: 0px 2%;
+}
+.about-us img{
+  margin-right: 30px;
+}
+.about-us p{
+  text-align: left;
+}
+.about-text{
+  margin: auto 0px;
+}
+.particular-about1{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 4%;
+}
+.particular-about1 img{
+  margin-left: 30px;
+}
+.particular-about1 p{
+  text-align: left;
+}
+.particular-about2{
+  display: flex;
+  margin: 0px 4%;
+}
+.particular-about2 img{
+  margin-right: 30px;
+}
+.particular-about2 p{
+  text-align: left;
+}
+.particilar-about-text{
+  margin: auto 0px;
+}
+.cup-taster{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px 4%;
+}
+.cup-taster img{
+  margin-left: 30px;
+}
+.cup-taster p{
+  text-align: left;
+}
+.cup-taster-text{
+  margin: auto 0px;
+}
+.barista{
+  display: flex;
+  margin: 0px 4%;
+}
+.barista img{
+  margin-right: 30px;
+}
+.barista p{
+  text-align: left;
+}
+.barista-text{
+  margin: auto 0px;
+}
+
+.about-us{
+  transition: 3s;
+  opacity: 0;
+}
+.about-us.animated{
+  opacity: 1;
+}
+.particular-about1{
+  transition: 3s;
+  opacity: 0;
+}
+.particular-about1.animated{
+  opacity: 1;
+}
+.particular-about2{
+  transition: 3s;
+  opacity: 0;
+}
+.particular-about2.animated{
+  opacity: 1;
+}
+.cup-taster{
+  transition: 3s;
+  opacity: 0;
+}
+.cup-taster.animated{
+  opacity: 1;
+}
+.barista{
+  transition: 3s;
+  opacity: 0;
+}
+.barista.animated{
+  opacity: 1;
+}

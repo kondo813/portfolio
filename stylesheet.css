@@ -1,0 +1,105 @@
+body {
+	font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+	font-size: 15px;
+	color: #333;
+	line-height:1.9;
+  text-align: center;
+}
+.profile {
+  margin-top: 15%;
+}
+.profile h2 {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.profile h2 span {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  top: -40px;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+}
+.profile .line {
+  background: #4a4a4a;
+  width: 55px;
+  height: 1px;
+  margin: 30px auto 60px;
+}
+p {
+  margin-top: 3ex;
+}
+.circle {
+  background: rgba(178, 229, 254, 0.565);
+  border-radius: 50%;
+  box-shadow: 10em -5em 4em 0 rgba(15, 28, 63, 0.125);
+  height: 45em;
+  width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -450px;
+} 
+.works {
+  margin-top: 15%;
+}
+.works h2 {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.works h2 span {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  top: -40px;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+}
+.works .line {
+  background: #4a4a4a;
+  width: 55px;
+  height: 1px;
+  margin: 0px auto;
+}
+.img-wrap img{
+  width: 50%;
+  margin-top: 60px;
+}
+.img-wrap2 img{
+  width: 40%;
+  margin-top: 60px;
+}
+.works a{
+  text-decoration: none;
+}
+.button-wrap{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+button {
+  display: block;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgb(178, 229, 254);
+}
+button:hover {
+  text-shadow: 0 0 10px #fff,0 0 15px #fff;
+}
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+footer small{
+  display: block;
+  font-size: 12px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}

@@ -1,0 +1,155 @@
+body{
+  background-color: rgba(254, 249, 199, 0.171);
+  color: rgb(68, 26, 16);
+}
+.summary{
+  text-align: center;
+}
+.teddyscafe_logo{
+  width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.summary h1{
+  font-size: 50px;
+}
+.summary img{
+  width: 60%;
+}
+.summary h3{
+  font-size: 20px;
+}
+.summary p{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+button {
+  line-height: 2.5;
+  margin-top: 40px;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgb(178, 229, 254);
+}
+button:hover {
+  text-shadow: 0 0 10px #fff,0 0 15px #fff;
+}
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.comment{
+  width: 96%;
+  margin: 0 auto;
+}
+.site_description{
+  margin: 50px 2%;
+	text-align: center;
+	display: block;
+}
+.site_discription0 {
+  text-align: left;
+	display: inline-block;
+}
+.site_discription0 h2{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.site_discription0 h3{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.site_discription0 h4{
+  font-size: 23px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.img-edit{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.img-edit img{
+  width: 50%;
+  margin: 20px;
+}
+.img-edit p{
+  font-size: 15px;
+  padding: 150px 0px;
+}
+.site_discription1{
+  margin-top: 100px;
+}
+.left{
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+.left img{
+  width: 95%;
+  border: solid 0.5px rgb(47, 9, 9);
+}
+.left2{
+  clear: both;
+  float: left;
+  width: 50%;
+}
+.left2 img{
+  width: 90%;
+  border: solid 0.5px rgb(47, 9, 9);
+}
+.left3{
+  float: left;
+  width: 50%;
+}
+.left3 img{
+  width: 90%;
+  border: solid 0.5px rgb(47, 9, 9);
+}
+.right2{
+  float: right;
+  width: 60%;
+  background-color: rgba(212, 241, 255, 0.319);
+  padding: 10px;
+}
+.right{
+  float: left;
+  width: 50%;
+  background-color: rgba(212, 241, 255, 0.319);
+   margin-left: 5%;
+   padding: 20px;
+}
+.discription{
+  margin-bottom: 50px;
+}
+.discription h4{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.discription p{
+  font-size: 18px;
+}
+.discription1 img{
+  width: 30%;
+  margin: -40px -20px -10px -20px;
+}
+.discription4 img{
+  width: 50%;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.discription6{
+  margin-bottom: 20px;
+}
+footer{
+  clear: both;
+  bottom: 0;
+  text-align: center;
+}

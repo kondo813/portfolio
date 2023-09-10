@@ -1,0 +1,134 @@
+.nav-menu{
+  border-bottom-style: solid;
+  border-width: 2px;
+  padding-bottom: 5px;
+}
+main img{
+  width: 350px;
+}
+main{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.menu-head-food{
+  font-size: 40px;
+  margin-top: 80px;
+}
+.menu-head-sweets{
+  font-size: 40px;
+  margin-top: 100px;
+}
+.menu-head-drink{
+  font-size: 40px;
+  margin-top: 100px;
+}
+.line {
+  background: #654b24;
+  width: 55px;
+  height: 1px;
+  margin: 0px auto 10px;
+}
+.menu-head-ja{
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.food{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.food-menu{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.food-contents{
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.sweets{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.sweets-menu{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sweets-contents{
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.drink{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.drink-menu{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.drink-contents{
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+.hover-discription{
+  width: 350px;        /* 画像の横幅（自由に指定） */
+  height: 234px;
+  position: relative;  /* 帯の表示位置の基準とする */
+}
+.hover-discription img{
+  width: 100%;
+  margin: 0;
+}
+.hover-discription p{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+  padding: 6px;
+}
+.hover-discription:hover p{
+  opacity: 1;   
+}
+.hover-discription-drink{
+  width: 350px;        /* 画像の横幅（自由に指定） */
+  height: 350px;
+  position: relative;  /* 帯の表示位置の基準とする */
+}
+.hover-discription-drink img{
+  width: 100%;
+  margin: 0;
+}
+.hover-discription-drink p{
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+  padding: 6px;
+}
+.hover-discription-drink:hover p{
+  opacity: 1;   
+}

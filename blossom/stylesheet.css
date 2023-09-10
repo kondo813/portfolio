@@ -1,0 +1,267 @@
+body{
+  font-family: ヒラギノ明朝 ProN;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  margin: auto 10px;
+}
+header li{
+  margin-left: 20px;
+  text-align: center;
+}
+header .list1{
+  font-size: 30px;
+  padding-top: 5px;
+}
+header li span{
+  color: #3FC4AB;
+}
+.headerimg{
+  width: 400px;
+}
+.headerbtn{
+  width: 150px;
+}
+.topimg{
+  position: relative;
+}
+.img1{
+  width: 50%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.img2{
+  width: 100%;
+}
+.introduction{
+  margin-top: 1%;
+  background-image: url(image/bgimg_1.svg);
+  background-size: 100%;
+}
+.description{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+.flowers{
+  width: 120px;
+  margin-bottom: -5%;
+}
+/* reason */
+.reason{
+  background-color: #f2fdff;
+  margin: 0px 7%;
+}
+.reason_content{
+  padding: 2% 5% 5% 5%;
+}
+.reason_header{
+  display: flex;
+  justify-content: center;
+  transform: translateX(60px);
+  margin-bottom: 5%;
+}
+.reason_logo{
+  width: 200px;
+  margin-bottom: -3%;
+}
+article h3{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.reason_main1{
+  display: flex;
+}
+.reason_main1 ul{
+  list-style-position: inside;
+}
+.reason_main2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.reason_main3{
+  display: flex;
+}
+.reason_main1 img{
+  width: 50%;
+}
+.reason_main2 img{
+  width: 50%;
+}
+.reason_main3 img{
+  width: 50%;
+}
+.reason-text{
+  margin: auto auto;
+}
+/* menu */
+.menu{
+  margin: 3% 7% 7% 7%;
+}
+.menu_main{
+  padding: 5%;
+  text-align: center;
+}
+.menu h1{
+  text-align: center;
+  transform: translateX(-60px);
+  margin-bottom: 10%;
+}
+.menu h4{
+  font-size: 20px;
+}
+.menu_content{
+  display: flex;
+  justify-content: center;
+}
+.menu_content img{
+  width: 95%;
+  margin-left: 10px;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+/* flow */
+.flow{
+  background-color: #f2fdff;
+  height: 100%;
+  margin: 10% 10%;
+}
+.flow_content{
+  padding: 1% 5% 3% 5%;
+}
+.flow_content h1{
+  text-align: center;
+  transform: translateX(60px);
+}
+.flowimg{
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -5%;
+}
+/* reserve */
+Form {
+  /* margin-top: 80px; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+.reserve h1{
+  text-align: center;
+  transform: translateX(-60px);
+  margin-bottom: 100px;
+}
+.form_content{
+  border: 1px solid #ddd;
+  padding: 5%;
+  border-radius: 2%;
+}
+.Form-Item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.Form-Item-Input {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  margin-left: 42px;
+}
+select, option{
+  border: 1px solid #ddd;
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 120px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #3FC4AB;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* footer */
+footer{
+  margin-top: 20%;
+}
+.tel-link{
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 120px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #3FC4AB;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.footer_shop{
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  position: absolute;
+  margin: 0px 2%;
+}
+.footer_img1{
+ width: 30%;
+}
+.footer_description{
+  margin-left: 10%;
+}
+.footer_description p{
+  margin-top: 10px;
+}
+.footer_logo{
+  width: 320px;
+  margin-top: 10px;
+}
+.footer_img2{
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  vertical-align: bottom;
+ }
