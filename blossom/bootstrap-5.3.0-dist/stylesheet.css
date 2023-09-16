@@ -1,0 +1,49 @@
+body{
+  font-family: ヒラギノ明朝 ProN;
+}
+.tel{
+  font-size: 25px;
+  padding-top: 5px;
+}
+.headerbtn{
+  background-color: #3FC4AB;
+  border-color: #3FC4AB;
+}
+header span{
+  color: #3FC4AB;
+}
+/* main */
+.topimg{
+  position: relative;
+}
+.img1{
+  width: 50%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.img2{
+  width: 100%;
+}
+.introduction{
+  margin-top: 1%;
+  background-image: url(image/bgimg_1.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.description{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+.description img{
+  width: 80%;
+  padding-bottom: 5%;
+}
+.flowers{
+  width: 120px;
+  margin-bottom: -5%;
+}
