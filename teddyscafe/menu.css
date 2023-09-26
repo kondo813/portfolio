@@ -26,30 +26,36 @@ main{
 .menu-head-food{
   font-size: 40px;
   margin-top: 80px;
+  font-family: HiraMinProN-W6;
+  font-weight: lighter;
 }
 @media screen and (max-width: 767px){
   .menu-head-food {
-    font-size: 30px;
-    margin-top: -30px;
+    font-size: 25px;
+    margin-top: -20px;
   }
 }
 .menu-head-sweets{
   font-size: 40px;
   margin-top: 100px;
+  font-family: HiraMinProN-W6;
+  font-weight: lighter;
 }
 @media screen and (max-width: 767px){
   .menu-head-sweets {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: -10px;
   }
 }
 .menu-head-drink{
   font-size: 40px;
   margin-top: 100px;
+  font-family: HiraMinProN-W6;
+  font-weight: lighter;
 }
 @media screen and (max-width: 767px){
   .menu-head-drink {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: -10px;
   }
 }
@@ -62,10 +68,10 @@ main{
 .menu-head-ja{
   font-size: 16px;
   margin-bottom: 50px;
+  font-weight: lighter;
 }
 @media screen and (max-width: 767px){
   .menu-head-ja {
-    font-size: 16px;
     margin-bottom: 0px;
   }
 }
@@ -85,9 +91,7 @@ main{
 }
 @media screen and (max-width: 767px){
   .food-contents {
-    margin-top: 10px;
     margin-right: 0px;
-    margin-bottom: 20px;
   }
 }
 .sweets{
@@ -106,9 +110,7 @@ main{
 }
 @media screen and (max-width: 767px){
   .sweets-contents {
-    margin-top: 10px;
     margin-right: 0px;
-    margin-bottom: 20px;
   }
 }
 .drink{
@@ -127,9 +129,7 @@ main{
 }
 @media screen and (max-width: 767px){
   .drink-contents {
-    margin-top: 10px;
     margin-right: 0px;
-    margin-bottom: 20px;
   }
 }
 .hover-discription{
@@ -141,7 +141,6 @@ main{
   .hover-discription {
     width: 260px;        
     height: 190px;
-    position: relative;  
   }
 }
 .hover-discription img{
@@ -183,7 +182,6 @@ main{
   .hover-discription-drink {
     width: 260px;        
     height: 260px;
-    position: relative;  
   }
 }
 .hover-discription-drink img{

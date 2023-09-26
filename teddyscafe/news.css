@@ -5,10 +5,12 @@
 }
 main{
   margin-bottom: 80px;
+  font-family: Century;
 }
 .head{
   font-size: 40px;
   margin-top: 80px;
+  font-family: HiraMinProN-W6;
 }
 @media screen and (max-width: 767px){
   .head {
@@ -25,6 +27,7 @@ main{
 .head-ja{
   font-size: 16px;
   margin-bottom: 50px;
+  font-weight: lighter;
 }
 @media screen and (max-width: 767px){
   .head-ja {
@@ -51,7 +54,6 @@ main{
   .article img {
     width: 280px;
     height: 190px;
-    margin: auto 30px;
   }
 }
 .article-text{
@@ -75,7 +77,9 @@ main{
 }
 .article-text h3{
   font-size: 21px;
+  margin-top: 5px;
   margin-bottom: 10px;
+  font-weight: lighter;
 }
 @media screen and (max-width: 767px){
   .article-text h3 {
