@@ -7,6 +7,7 @@ body{
   background-position: center;
   color: #212529;
 }
+
 /* main */
 .introduction{
   background-color: white;
@@ -65,6 +66,52 @@ body{
       opacity: 0;
   }
 }
+/* コンバージョンボタン追従 */
+.button{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.537);
+  z-index: 1;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  margin: auto 10px;
+}
+header li{
+  margin-left: 20px;
+  text-align: center;
+}
+header .list1{
+  font-size: 30px;
+  padding-top: 5px;
+}
+@media screen and (max-width: 991px){
+  .list1, .list2{
+    display: none;
+  }
+}
+header li span{
+  color: #9EB384;
+}
+.headerimg{
+  width: 400px;
+}
+@media screen and (max-width: 767px){
+  .headerimg{
+    width: 200px;
+  }
+}
+.headerbtn{
+  width: 150px;
+}
+@media screen and (max-width: 767px){
+  .headerbtn{
+    width: 90px;
+    margin-top: 5px;
+  }
+} 
 .button{
   background-color: #665A48;
   height: 90px;
@@ -453,8 +500,8 @@ article img{
 }
 @media screen and (max-width: 767px){
   article img{
-    width: 80%;
-    margin: 0 10%;
+    width: 90%;
+    margin: 0 5%;
   }
 }
 .reason-text{
@@ -617,6 +664,7 @@ article img{
   .campaign_both{
     display: block;
     height: 100%;
+    margin: 3%;
   }
 }
 .campaign h3{
@@ -679,8 +727,8 @@ article img{
 @media screen and (max-width: 767px){
   .campaign_right img{
     width: 300px;
-    margin-left: 2%;
-    margin-top: -4%;
+    margin-left: 8%;
+    margin-top: -3%;
   }
 }
 
