@@ -1,0 +1,223 @@
+body{
+  font-family: "Tazugane Info", "ヒラギノ角ゴ シック W0", "Hiragino Sans", 游ゴシック, YuGothic, ＭＳ ゴシック, "MS Gothic", "Noto Sans CJK JP", sans-serif;
+}
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  right: -290px; /* 初期位置は右に隠れている */
+  width: 290px; /* メニューの幅を設定 */
+  height: 100%;
+  background-color: #EDEDED;
+  padding-top: 60px; /* ロゴのためのスペースを確保 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out; /* 右への移動にアニメーションを適用 */
+  z-index: 9999;
+}
+.navbar-menu.active {
+  right: 0; /* メニューが表示されると右からスライドイン */
+}
+.navbar-brand img {
+  height: 75px;
+}
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.navbar-menu ul li {
+  margin: 15px 0;
+  text-align: center;
+}
+.navbar-menu ul li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  background-color: #0467D9;
+  margin: 0 20px;
+  padding: 15px;
+  text-align: left;
+}
+.navbar-menu ul li a:hover {
+  color: #fbbd00;
+}
+
+
+
+.header1{
+  background: linear-gradient(#015EC9, #0273EE);
+  height: 87px;
+  font-size: 12px;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-left: 125px;
+}
+/* .header1_img{
+  width: 141px;
+  height: 74px;
+} */
+.header2{
+  background-color: #0467D9;
+  height: 60px;
+  font-size: 12px;
+  padding-left: 140px;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 87px;
+  z-index: 1;
+}
+@media screen and (max-width: 1000px){
+  .header2{
+    display:none;
+  }
+} 
+.header2 img{
+  width: 80px;
+  margin-right: -20px;
+}
+.topimg{
+  height: 606px;
+}
+.topimg2{
+  background-color: #1B3385;
+  color: white;
+  height: 180px;
+}
+.topimg2 h1{
+  font-weight: bold;
+}
+.topmenu{
+  /* width: 1146px; */
+  height: 104px;
+  font-size: 12px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
+}
+.topmenu img{
+  width: 30px;
+
+}
+.mainmenu{
+  background-color: #19307A;
+  height: 154px;
+  color: white;
+}
+.picup_content{
+  width: 270px;
+  height: 380px;
+  border-radius: 13px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+}
+.picup_content_img{
+  width: 270px;
+  height: 180px;
+  background-color: #19307A;
+}
+.picup_content h2{
+  font-size: 15px;
+  font-weight: bold;
+}
+.picup_content p{
+  font-size: 15px;
+}
+.useful_information_content{
+  width: 400px;
+}
+.useful_information_img{
+  width: 370px;
+  height: 247px;
+  background-color: #f4ea79;
+}
+.useful_information_content h2{
+  font-size: 15px;
+}
+.useful_information_content p{
+  font-size: 13px;
+}
+.news_topics{
+  width: 85%;
+  margin: 0 auto;
+}
+.news_topics h2{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px 0;
+  margin-left: 10px;
+}
+.news_topics p{
+  margin-left: 10px;
+}
+.news_btn{
+  width: 149px;
+  height: 44px;
+  color: white;
+  background-color: #0467D9;
+  border: none;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.sns_content{
+  width: 384px;
+}
+.sns_content h2{
+  font-size: 17px;
+  font-weight: bold;
+}
+.sns_content p{
+  font-size: 17px;
+}
+.sns_img{
+  width: 354px;
+  height: 236px;
+  background-color: aliceblue;
+}
+.fotter{
+  background-color: #F9F9F9;
+}
+.fotter_sns_follow{
+  padding: 35px 0;
+}
+.fotter_sns_follow img{
+  width: 30px;
+  height: 30px;
+}
+.fotter_language{
+  color: #0467D9;
+  font-weight: bold;
+  padding: 40px 0;
+  padding-left: 100px;
+}
+.fotter_menu{
+  color: #0467D9;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 35px 0;
+}
+.fotter_copyright{
+  padding: 35px 0;
+}
+.fotter_copyright_menu{
+  color: #0467D9;
+  font-size: 12px;
+  font-weight: bold;
+}
+.copyright{
+  font-size: 13px;
+}
+.fotter_bottom{
+  background-color: #0467D9;
+  height: 40px;
+}
+
+
+.line{
+  background: #4d3d2692;
+  width: 85%;
+  height: 2px;
+  margin: 0 90px;
+}
+
