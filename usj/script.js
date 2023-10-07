@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
 $('.menu-trigger').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
@@ -33,3 +31,10 @@ $('.overlay').on('click',function(){
   }
 });
 
+
+// ひっくり返るカード
+$(function(){
+  $('.picup_content').on('click',function(){
+    $(this).toggleClass('flipped')
+  });
+});

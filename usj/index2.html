@@ -34,6 +34,25 @@
   <div class="overlay"></div>
 </div>
 
-<script src="js/script.js"></script>
+
+<!-- ひっくり返るカード -->
+<div class="card">
+  <div class="front">
+      <p>FRONT</p>
+  </div>
+  <div class="back">
+      <p>BACK</p>
+  </div>
+</div>
+
+
+
+<script src="script.js">
+  $(function(){
+  $('.card').on('click',function(){
+    $(this).toggleClass('flipped')
+  });
+});
+</script>
 </body>
 </html>
