@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <!-- 互換表示をさせないために設定するmetaタグです。 -->
+    <!-- 互換表示をさせないために設定するmetaタグ -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ユニバース・スタジオ・ジャパン</title>
@@ -16,351 +16,385 @@
     <link rel="shortcut icon" href="image/usj-logo.ico">
   </head>
   <body>
-    <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-light  header1">
+      <header>
+        <!-- ナビゲーションバー -->
+        <nav class="navbar navbar-expand-lg navbar-light header1">
+          <a class="navbar-brand" href="#">
+            <img src="image/usj-logo.svg" alt="USJ ロゴ">
+          </a>
+          <ul class="d-flex header1_menu">
+            <li><a href="#">日本語</a></li>
+            <li><a href="#">サービスガイド＞</a></li>
+            <li><a href="#">交通アクセス＞</a></li>
+            <li><a href="#">会員登録|ログイン＞</a></li>
+            <li><a href="#">チケット情報</a></li>
+            <li><a href="#">本日の営業時間8:30~21:30</a></li>
+          </ul>
+          <!-- ハンバーガーボタン -->
+          <button class="navbar-toggler" type="button" id="toggleButton" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ハンバーガーメニュー -->
+          <div class="navbar-menu" id="menu">
+            <ul>
+              <li><a href="#">イベント&アトラクション</a></li>
+              <li><a href="#">パークの楽しみ方</a></li>
+              <li><a href="#">フード＆グッズ</a></li>
+              <li><a href="#">旅行プラン＆ホテル</a></li>
+              <li><a href="#">チケット情報</a></li>
+              <li><a href="#">サービスガイド＞</a></li>
+              <li><a href="#">交通アクセス＞</a></li>
+              <li><a href="#">会員登録|ログイン＞</a></li>
+              <li><a href="#">本日の営業時間8:30~21:30</a></li>
+            </ul>
+          </div>
+        </nav>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="image/usj-logo.svg" alt="USJ ロゴ">
-            </a>
+        <!-- ヘッダー2 -->
+          <!-- <div class="row header1">
+            <img src="" class="header1_img">
             <div class="col-lg-1">日本語</div>
             <div class="col-lg-1">サービスガイド＞</div>
             <div class="col-lg-1">交通アクセス＞</div>
             <div class="col-lg-1">会員登録|ログイン＞</div>
             <div class="col-lg-1">本日の営業時間8:30~21:30</div>
-            <!-- ハンバーガーボタン -->
-            <button class="navbar-toggler" type="button" id="toggleButton" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+          </div> -->
+          <div class="row header2">
+            <div class="col-lg-1"><p class="header2_menu">イベント&<br>アトラクション</p></div>
+            <div class="col-lg-1"><p class="header2_menu">パークの楽しみ方</p></div>
+            <div class="col-lg-1"><p class="header2_menu">フード＆<br>グッズ</p></div>
+            <div class="col-lg-1"><p class="header2_menu">旅行プラン＆<br>ホテル</p></div>
+            <div class="col-lg-1"><p class="header2_menu">チケット情報</p></div>
+            <div class="col-lg-2 offset-lg-3 ticket_menu"><p>チケットを探す・購入する⏬</p></div>
+            <img src="image/shopping_icon.svg" alt="">
+            <img src="image/search_icon.svg" alt="">
+          </div>
+        </header>
+        <div class="container-fluid">
+        <main>
+            <!-- スライダー -->
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/social-icon-instagram.png" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="image/social-icon-twitter.png" class="d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-        </div>
-    </nav>
-
-    <!-- ハンバーガーメニュー -->
-    <div class="navbar-menu" id="menu">
-        <ul>
-            <li><a href="#">イベント&アトラクション</a></li>
-            <li><a href="#">パークの楽しみ方</a></li>
-            <li><a href="#">フード＆グッズ</a></li>
-            <li><a href="#">旅行プラン＆ホテル</a></li>
-            <li><a href="#">チケット情報</a></li>
-            <li><a href="#">サービスガイド＞</a></li>
-            <li><a href="#">交通アクセス＞</a></li>
-            <li><a href="#">会員登録|ログイン＞</a></li>
-            <li><a href="#">本日の営業時間8:30~21:30</a></li>
-        </ul>
-    </div>
-
-
-
-
-    <!-- ヘッダー -->
-    <div class="container-fluid">
-      <!-- <div class="row header1">
-        <img src="" class="header1_img">
-        <div class="col-lg-1">日本語</div>
-        <div class="col-lg-1">サービスガイド＞</div>
-        <div class="col-lg-1">交通アクセス＞</div>
-        <div class="col-lg-1">会員登録|ログイン＞</div>
-        <div class="col-lg-1">本日の営業時間8:30~21:30</div>
-      </div> -->
-      <div class="row header2">
-        <div class="col-lg-1">イベント&<br>アトラクション</div>
-        <div class="col-lg-1">パークの楽しみ方</div>
-        <div class="col-lg-1">フード＆<br>グッズ</div>
-        <div class="col-lg-1">旅行プラン＆<br>ホテル</div>
-        <div class="col-lg-1">チケット情報</div>
-        <div class="col-lg-1">チケットを探す・購入する</div>
-        <img src="image/shopping_icon.svg" alt="">
-        <img src="image/search_icon.svg" alt="">
-      </div>
-      <div class="row topimg"></div>
-      <div class="row topimg2">
-        <h1>ユニハロ</h1>
-        <p>開催期間：2023年9月7日（木）～11月5日（日）</p>
-      </div>
-      <div class="row text-center topmenu">
-        <div class="col-lg-2 col-6">
-          <img src="image/event_icon.svg" alt="">
-          イベント
-        </div>
-        <div class="col-lg-2 col-6">
-          <img src="image/attraction_icon.svg" alt="">
-          アトラクション
-        </div>
-        <div class="col-lg-2 col-6">
-          <img src="image/ticket_icon.svg" alt="">
-          チケット
-        </div>
-        <div class="col-lg-2 col-6">
-          <img src="image/travel_icon.svg" alt="">
-          トラベル
-        </div>
-        <div class="col-lg-2 col-6">
-          <img src="image/shop_icon.svg" alt="">
-          フード
-        </div>
-        <div class="col-lg-2 col-6">
-          <img src="image/shop_icon.svg" alt="">
-          グッズ
-        </div>
-      </div>
-      <!-- メイン -->
-      <div class="row justify-content-center picup">
-        <h1>ピックアップ</h1>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『ユニハロ』</h2>
-            <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="back">
-            <h2>『ユニハロ』</h2>
-            <p>ユニハロ限定！お得な宿泊プランをJTBで販売中</p>
+          <!-- <div class="row topimg"></div> -->
+          <div class="row topimg2">
+            <h1>ユニハロ</h1>
+            <p>開催期間：2023年9月7日（木）～11月5日（日）</p>
           </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『ハロウィーン・ホラー・ナイト』</h2>
-            <p>開催期間：2023年9月8日（金）～ 11月5日（日）</p>
+          <div class="row justify-content-center text-center topmenu">
+            <div class="col-lg-2 col-6 topmenu_contents">
+              <img src="image/event_icon.svg" alt="">
+              <p>イベント</p>
+            </div>
+            <div class="col-lg-2 col-6 topmenu_contents">
+              <img src="image/attraction_icon.svg" alt="">
+              <p>アトラクション</p>
+            </div>
+            <div class="col-lg-2 col-6 topmenu_contents">
+              <img src="image/ticket_icon.svg" alt="">
+              <p>チケット</p>
+            </div>
+            <div class="col-lg-2 col-6 topmenu_contents">
+              <img src="image/travel_icon.svg" alt="">
+              <p>トラベル</p>
+            </div>
+            <div class="col-lg-2 col-6 topmenu_contents">
+              <img src="image/shop_icon.svg" alt="">
+              <p>フード</p>
+            </div>
+            <div class="col-lg-2 col-6 topmenu_contents">
+              <img src="image/shop_icon.svg" alt="">
+              <p>グッズ</p>
+            </div>
           </div>
-          <div class="back">
-            <h2>『ハロウィーン・ホラー・ナイト』</h2>
-            <p>史上最多ゾンビ＆超凶悪ホラーのオンパレード！ 腹の底から大絶叫して、超スッキリ！</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『ハハハ！ハロウィーン・パーティー』</h2>
-            <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
-          </div>
-          <div class="back">
-            <h2>『ハハハ！ハロウィーン・パーティー』</h2>
-            <p>かわいくて楽しくて大笑いしちゃう、最高にゴキゲンな熱狂デイタイム！</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『スーパー・ニンテンドー・ワールド™』</h2>
-            <p>現在運営中！</p>
-          </div>
-          <div class="back">
-            <h2>『スーパー・ニンテンドー・ワールド™』</h2>
-            <p>#WE ARE MARIO!!
-              アソビの本能、解き放て！
-              誰かと真剣に競い合ったり、仲間と協力したり、夢中になって遊ぶ時、人は誰だって最高にいい顔。そう、みんな、遊ぶために生まれてきたんだ！世界中で愛される、あのゲームの世界に入り込んで、マリオのように、体ごと全力で遊ぶ…。ここは、子どもも大人も誰もが、五感のすべてを解放して、本気で遊べる、世界で唯一の遊び場。合言葉は「#WE ARE MARIO!!」さあ、アソビの本能を解き放て！</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center picup2">
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『NO LIMIT!パレード』</h2>
-            <p>開催期間：2023年3月1日（水）～</p>
-          </div>
-          <div class="back">
-            <h2>『NO LIMIT!パレード』</h2>
-            <p>さあ、最高に熱いダンス・パーティのはじまりだ！みんなが主役の超熱狂パレードで、超元気になろう！</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h2>
-            <p>開催期間：2023年3月17日（金）〜 12月31日（日）</p>
-          </div>
-          <div class="back">
-            <h2>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h2>
-            <p>この世界が、じっとしているわけがない。この世界は、生きている。いつも生命に満ちあふれ、訪れる度、新たな魔法体験との出会いにワクワクするこの別世界が、また一つ進化。ついに、魔法生物も息づき始めた！ 目覚め続けるこの世界では、あなたの魔法の旅は終わらない。</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『ワンピース・プレミア・サマー2023』</h2>
-            <p>開催期間：2023年7月5日（水）〜 10月10日（火）</p>
-          </div>
-          <div class="back">
-            <h2>『ワンピース・プレミア・サマー2023』</h2>
-            <p>すべてが限界突破(ノーリミット)！ お前の本気を見せてみろ！ 全アトラクションに最強メンバー大集結で、今年はまさに限界突破！ 過去最高に大熱狂、この夏だけのワンピースを超本気で楽しみつくせ！</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『呪術廻戦・ザリアル・4-D』</h2>
-            <p>開催期間：2022年9月16日（金）～ 2023年11月5日（日）</p>
-          </div>
-          <div class="back">
-            <h2>『呪術廻戦・ザリアル・4-D』</h2>
-            <p>呪霊に挑む、覚悟はあるか。
-              呪術戦に間近で遭遇する、衝撃の4-Dアトラクション、出現。</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center picup2">
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-            <h2>『NO LIMIT!クリスマス』</h2>
-            <p>開催期間：2023年11月21日（火）～ 2024年1月8日（月）</p>
-          </div>
-          <div class="back">
-            <h2>『NO LIMIT!クリスマス』</h2>
-            <p>We wish ”YEAH!” Merry Christmas! いつもの冬をぶっとばせ！</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="picup_content_img">
-            <h2>『NO LIMIT!カウントダウン2024』</h2>
-            <p>開催期間：2023年12月31日（日）19:00～2024年1月1日（月）21:00</p>
-          </div>
-          <div class="back">
-            <h2>『NO LIMIT!カウントダウン2024』</h2>
-            <p>これが完売必至の“超熱狂”！ 一夜限りの贅沢な宴が今年も！</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="picup_content_img">
-            <h2>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h2>
-            <p>開催期間：2023年7月4日（火）〜 2024年1月22日（月）</p>
-          </div>
-          <div class="back">
-            <h2>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h2>
-            <p>ラスト・アメージング 20年つないだ絆に、ありがとう。
-              伝説のライドが、ついにファイナル！ たくさんの思い出に、大いなる「ありがとう」を込めて。さあ、ラスト・アメージングを、ご一緒に。</p>
-          </div>
-        </div>
-        <div class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
-          <div class="front">
-            <img src="image/usj-logo.svg" class="picup_content_img">
-            <h2>『NO LIMIT!』</h2>
-            <p>開催期間：2022年3月29日（火）～</p>
-          </div>
-          <div class="back">
-            <h2>『NO LIMIT!』</h2>
-            <p>ぶっとべ！ここは超元気特区
-              思いっきりはしゃごう。
-              ありえないくらい笑おう。
-              ドデカい声で叫ぼう。
-              人生には、ぶっ飛んだ1日が必要だ。</p>
-          </div>
-        </div>
-      </div>
-      <div class="line"></div>
-      <div class="row justify-content-center useful_information">
-        <h1>お役立ち情報</h1>
-          <div class="col-lg-2 col-6 m-3 useful_information_content">
-            <img src="" class="useful_information_img">
-            <h2>【スーパー・ニンテンドー・ワールド™　攻略ガイド】</h2>
-            <p>マリオの世界を確実に楽しみつくすためのテッパン・ガイド！【基礎編】から【応用編】まで公開中！</p>
-            <button class="news_btn" type="button">詳しくはこちら</button>
-          </div>
-          <div class="col-lg-2 col-6 m-3 useful_information_content">
-            <img src="" class="useful_information_img">
-            <h2>来場前に公式アプリをダウンロード！</h2>
-            <p>公式アプリで、もっとパークを楽しもう！</p>
+        <article class="row justify-content-center picup">
+          <h2>ピックアップ</h2>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『ユニハロ』</h3>
+              <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
+            </div>
+            <div class="back">
+              <h3>『ユニハロ』</h3>
+              <p>ユニハロ限定！お得な宿泊プランをJTBで販売中</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『ハロウィーン・ホラー・ナイト』</h3>
+              <p>開催期間：2023年9月8日（金）～ 11月5日（日）</p>
+            </div>
+            <div class="back">
+              <h3>『ハロウィーン・ホラー・ナイト』</h3>
+              <p>史上最多ゾンビ＆超凶悪ホラーのオンパレード！ 腹の底から大絶叫して、超スッキリ！</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『ハハハ！ハロウィーン・パーティー』</h3>
+              <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
+            </div>
+            <div class="back">
+              <h3>『ハハハ！ハロウィーン・パーティー』</h3>
+              <p>かわいくて楽しくて大笑いしちゃう、最高にゴキゲンな熱狂デイタイム！</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『スーパー・ニンテンドー・ワールド™』</h3>
+              <p>現在運営中！</p>
+            </div>
+            <div class="back">
+              <h3>『スーパー・ニンテンドー・ワールド™』</h3>
+              <p>#WE ARE MARIO!!
+                アソビの本能、解き放て！
+                誰かと真剣に競い合ったり、仲間と協力したり、夢中になって遊ぶ時、人は誰だって最高にいい顔。そう、みんな、遊ぶために生まれてきたんだ！世界中で愛される、あのゲームの世界に入り込んで、マリオのように、体ごと全力で遊ぶ…。ここは、子どもも大人も誰もが、五感のすべてを解放して、本気で遊べる、世界で唯一の遊び場。合言葉は「#WE ARE MARIO!!」さあ、アソビの本能を解き放て！</p>
+            </div>
+          </section>
+        </article>
+        <article class="row justify-content-center picup2">
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『NO LIMIT!パレード』</h3>
+              <p>開催期間：2023年3月1日（水）～</p>
+            </div>
+            <div class="back">
+              <h3>『NO LIMIT!パレード』</h3>
+              <p>さあ、最高に熱いダンス・パーティのはじまりだ！みんなが主役の超熱狂パレードで、超元気になろう！</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h3>
+              <p>開催期間：2023年3月17日（金）〜 12月31日（日）</p>
+            </div>
+            <div class="back">
+              <h3>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h3>
+              <p>この世界が、じっとしているわけがない。この世界は、生きている。いつも生命に満ちあふれ、訪れる度、新たな魔法体験との出会いにワクワクするこの別世界が、また一つ進化。ついに、魔法生物も息づき始めた！ 目覚め続けるこの世界では、あなたの魔法の旅は終わらない。</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『ワンピース・プレミア・サマー2023』</h3>
+              <p>開催期間：2023年7月5日（水）〜 10月10日（火）</p>
+            </div>
+            <div class="back">
+              <h3>『ワンピース・プレミア・サマー2023』</h3>
+              <p>すべてが限界突破(ノーリミット)！ お前の本気を見せてみろ！ 全アトラクションに最強メンバー大集結で、今年はまさに限界突破！ 過去最高に大熱狂、この夏だけのワンピースを超本気で楽しみつくせ！</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『呪術廻戦・ザリアル・4-D』</h3>
+              <p>開催期間：2022年9月16日（金）～ 2023年11月5日（日）</p>
+            </div>
+            <div class="back">
+              <h3>『呪術廻戦・ザリアル・4-D』</h3>
+              <p>呪霊に挑む、覚悟はあるか。
+                呪術戦に間近で遭遇する、衝撃の4-Dアトラクション、出現。</p>
+            </div>
+          </section>
+        </article>
+        <article class="row justify-content-center picup2">
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+              <h3>『NO LIMIT!クリスマス』</h3>
+              <p>開催期間：2023年11月21日（火）～ 2024年1月8日（月）</p>
+            </div>
+            <div class="back">
+              <h3>『NO LIMIT!クリスマス』</h3>
+              <p>We wish ”YEAH!” Merry Christmas! いつもの冬をぶっとばせ！</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="picup_content_img">
+              <h3>『NO LIMIT!カウントダウン2024』</h3>
+              <p>開催期間：2023年12月31日（日）19:00～2024年1月1日（月）21:00</p>
+            </div>
+            <div class="back">
+              <h3>『NO LIMIT!カウントダウン2024』</h3>
+              <p>これが完売必至の“超熱狂”！ 一夜限りの贅沢な宴が今年も！</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="picup_content_img">
+              <h3>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h3>
+              <p>開催期間：2023年7月4日（火）〜 2024年1月22日（月）</p>
+            </div>
+            <div class="back">
+              <h3>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h3>
+              <p>ラスト・アメージング 20年つないだ絆に、ありがとう。
+                伝説のライドが、ついにファイナル！ たくさんの思い出に、大いなる「ありがとう」を込めて。さあ、ラスト・アメージングを、ご一緒に。</p>
+            </div>
+          </section>
+          <section class="col-11 col-sm-5 col-lg-2 m-3 p-0 picup_content">
+            <div class="front">
+              <img src="image/usj-logo.svg" class="picup_content_img">
+              <h3>『NO LIMIT!』</h3>
+              <p>開催期間：2022年3月29日（火）～</p>
+            </div>
+            <div class="back">
+              <h3>『NO LIMIT!』</h3>
+              <p>ぶっとべ！ここは超元気特区
+                思いっきりはしゃごう。
+                ありえないくらい笑おう。
+                ドデカい声で叫ぼう。
+                人生には、ぶっ飛んだ1日が必要だ。</p>
+            </div>
+          </section>
+          <div class="picup_bottom_line"></div>
+        </article>
+        <article class="row justify-content-center useful_information">
+          <h2>お役立ち情報</h2>
+            <section class="col-sm-4 col-lg-3 useful_information_content">
+              <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
+              <h3>【スーパー・ニンテンドー・ワールド™　攻略ガイド】</h3>
+              <p>マリオの世界を確実に楽しみつくすためのテッパン・ガイド！【基礎編】から【応用編】まで公開中！</p>
               <button class="news_btn" type="button">詳しくはこちら</button>
-          </div>
-          <div class="col-lg-2 col-6 m-3 useful_information_content">
-            <img src="" class="useful_information_img">
-            <h2>ユニバース・プライム年間パス　“人生に、もっとUSJを。”</h2>
-            <p>生まれ変わった「ユニバーサル・プライム年間パス」で、笑顔あふれる大興奮の一年が、あなたのものに。
-              驚きの特典の数々で、新しい楽しみ方が叶うから、パークに来ていない時だって、毎日が元気いっぱいに！
-              あなたとパークがもっともっと近くなる年間パス、誕生。</p>
-            <button class="news_btn" type="button">詳しくはこちら</button>
-          </div>
-        </div>
-        <div class="line"></div>
+            </section>
+            <section class="col-6 col-sm-4 col-lg-3 useful_information_content">
+              <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
+              <h3>来場前に公式アプリをダウンロード！</h3>
+              <p>公式アプリで、もっとパークを楽しもう！</p>
+                <button class="news_btn" type="button">詳しくはこちら</button>
+            </section>
+            <section class="col-6 col-sm-4 col-lg-3 useful_information_content">
+              <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
+              <h3>ユニバース・プライム年間パス　“人生に、もっとUSJを。”</h3>
+              <p>生まれ変わった「ユニバーサル・プライム年間パス」で、笑顔あふれる大興奮の一年が、あなたのものに。
+                驚きの特典の数々で、新しい楽しみ方が叶うから、パークに来ていない時だって、毎日が元気いっぱいに！
+                あなたとパークがもっともっと近くなる年間パス、誕生。</p>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </section>
+            <div class="useful_information_bottom_line"></div>
+        </article>
         <div class="row justify-content-center mainmenu">
-          <div class="col-2">営業時間</div>
-          <div class="col-2">パークマップ</div>
-          <div class="col-2">パーキング情報</div>
-          <div class="col-2">交通アクセス</div>
+            <div class="col-2">営業時間</div>
+            <div class="col-2">パークマップ</div>
+            <div class="col-2">パーキング情報</div>
+            <div class="col-2">交通アクセス</div>
         </div>
-        <div class="row news_topics">
-          <h1>ニューストピックス</h1>
-          <div class="line"></div>
-          <h2>【台風7号による8月15日のパーク営業変更に伴うチケットの取扱いについて】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【『ぶっとび政策 第五弾』渋谷スクリーム ～ハロウィーン・ホラー・ナイト～】</h2>
-          <p>予想もできない声がでる！ 会場全体が一つになり心の底から超元気になれる、ハロウィーン・イベントを渋谷で開催！</p>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【ユニバーサル・トラベルだけのスペシャルプラン】</h2>
-          <p>好評販売中！列車もしくは飛行機をおトクな価格でセットにできて、オフィシャルホテルも選べる、大満足間違いなしのプラン！さらに人気アトラクションをスムーズに体験できるエクスプレス・パス付き！</p>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【熱中症にご注意ください】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>ケンネルは2024年1月8日（月）をもって営業を終了いたします】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【悪質な偽サイトにご注意ください】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【スーツケースなど大型荷物のパーク来場前お預けについてのお願い】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【安全安心なパーク運営について】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【手荷物検査の実施について】</h2>
-          <button class="news_btn" type="button">詳しくはこちら</button>
-          <div class="line"></div>
-          <h2>【転売されたチケットのQRコード無効化について】</h2>
-          <p>ご注意ください！チケットの転売は固く禁止されています。転売チケットはパークで利用できません。
-            チケット売買サイトやインターネットオークションサイト等で転売者が販売したチケットについて、2015年11月1日（日）入場分よりQRコードを無効化します。</p>
-            <button class="news_btn" type="button">詳しくはこちら</button>
-            <div class="line"></div>
-            <button class="news_btn" type="button">一覧を見る</button>
-        </div>
-        <div class="row justify-content-center sns">
-          <div class="col-lg-2 col-6 m-1 sns_content">
-            <img src="image/usj-logo-xtwitter-c.avif" class="sns_img">
-            <h2>公式 X</h2>
-            <p>@USJ_Official からのポスト</p>
+        <article class="row news_topics">
+            <h2>ニューストピックス</h2>
+            <div class="topics">
+              <h3>【台風7号による8月15日のパーク営業変更に伴うチケットの取扱いについて】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【『ぶっとび政策 第五弾』渋谷スクリーム ～ハロウィーン・ホラー・ナイト～】</h3>
+              <p>予想もできない声がでる！ 会場全体が一つになり心の底から超元気になれる、ハロウィーン・イベントを渋谷で開催！</p>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【ユニバーサル・トラベルだけのスペシャルプラン】</h3>
+              <p>好評販売中！列車もしくは飛行機をおトクな価格でセットにできて、オフィシャルホテルも選べる、大満足間違いなしのプラン！さらに人気アトラクションをスムーズに体験できるエクスプレス・パス付き！</p>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【熱中症にご注意ください】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>ケンネルは2024年1月8日（月）をもって営業を終了いたします】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【悪質な偽サイトにご注意ください】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【スーツケースなど大型荷物のパーク来場前お預けについてのお願い】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【安全安心なパーク運営について】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【手荷物検査の実施について】</h3>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics">
+              <h3>【転売されたチケットのQRコード無効化について】</h3>
+              <p>ご注意ください！チケットの転売は固く禁止されています。転売チケットはパークで利用できません。
+                チケット売買サイトやインターネットオークションサイト等で転売者が販売したチケットについて、2015年11月1日（日）入場分よりQRコードを無効化します。</p>
+              <button class="news_btn" type="button">詳しくはこちら</button>
+            </div>
+            <div class="topics topics_news_btn">
+              <button class="news_btn" type="button">一覧を見る</button>
+            </div>
+          </article>
+          <div class="row justify-content-center sns">
+            <div class="col-lg-2 col-6 m-1 sns_content">
+              <img src="image/usj-logo-xtwitter-c.avif" class="sns_img">
+              <h3>公式 X</h3>
+              <p>@USJ_Official からのポスト</p>
+            </div>
+            <div class="col-lg-2 col-6 m-1 sns_content">
+              <img src="image/usj-logo-instagram-c.avif" class="sns_img">
+              <h3>公式Instagram</h3>
+              <p>公式Instagramアカウントを「フォロー」して 最新情報をチェックしよう！</p>
+            </div>
+            <div class="col-lg-2 col-6 m-1 sns_content">
+              <img src="" class="sns_img">
+              <h3>「#USJファン」大募集！</h3>
+              <p>私たちと一緒に、 パークの魅力を発信いただける、 「#USJファン」大募集！</p>
+            </div>
           </div>
-          <div class="col-lg-2 col-6 m-1 sns_content">
-            <img src="image/usj-logo-instagram-c.avif" class="sns_img">
-            <h2>公式Instagram</h2>
-            <p>公式Instagramアカウントを「フォロー」して 最新情報をチェックしよう！</p>
-          </div>
-          <div class="col-lg-2 col-6 m-1 sns_content">
-            <img src="" class="sns_img">
-            <h2>「#USJファン」大募集！</h2>
-            <p>私たちと一緒に、 パークの魅力を発信いただける、 「#USJファン」大募集！</p>
-          </div>
-        </div>
-        <!-- フッター -->
-        <div class="line"></div>
+      </main>
+      <fotter>
         <div class="row justify-content-center fotter fotter_sns_follow">
-          <div class="col-lg-5">みんなで「いいね」しよう！</div>
-          <div class="col-lg-5">公式SNSアカウントをフォロー！
-            <img src="image/social-icon-twitter.png">
-            <img src="image/social-icon-instagram.png">
-            <img src="image/social-icon-facebook.png">
-            <img src="image/social-icon-youtube.png">
-            <img src="image/social-icon-line.png">
+          <div class="col-lg-5 fotter_line">
+            <p>みんなで「いいね」しよう！</p>
+          </div>
+          <div class="col-lg-5 fotter_line d-flex">
+            <p>公式SNSアカウントをフォロー！</p>
+            <div class="fotter_sns_img">
+              <img src="image/social-icon-twitter.png">
+              <img src="image/social-icon-instagram.png">
+              <img src="image/social-icon-facebook.png">
+              <img src="image/social-icon-youtube.png">
+              <img src="image/social-icon-line.png">
+            </div>
           </div>
         </div>
-        <div class="line"></div>
-        <div class="row fotter fotter_language">
-          <div class="col-1">日本語</div>
-          <div class="col-1">ENGLISH</div>
-          <div class="col-1">簡体中文</div>
-          <div class="col-1">韓国語</div>
-          <div class="col-1">中文</div>
+        <div class="row justify-content-center fotter fotter_language">
+          <div class="col-lg-10 d-flex fotter_line">
+            <p>日本語</p>
+            <p>ENGLISH</p>
+            <p>簡体中文</p>
+            <p>韓国語</p>
+            <p>中文</p>
+          </div>
         </div>
-        <div class="line"></div>
         <div class="row justify-content-center fotter fotter_menu">
-          <div class="col-md-3">
+          <div class="col-md-4 col-lg-3 fotter_line">
             <p>イベントを探す</p>
             <p>アトラクションを探す</p>
             <p>フード＆レストラン</p>
@@ -368,7 +402,7 @@
             <p>ユニバース・トラベル</p>
             <p>パートナーホテル</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4 col-lg-4 fotter_line_responsive1">
             <p>WEBチケットストア</p>
             <p>Clubユニバーサス</p>
             <p>団体・企業向けプログラム</p>
@@ -376,7 +410,7 @@
             <p>マーケティング・パートナーパートナーのご紹介</p>
             <p>公式ソーシャルメディアアカウント一覧</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4 col-lg-3 fotter_line_responsive2">
             <p>企業情報</p>
             <p>採用情報</p>
             <p>クルー募集</p>
@@ -385,21 +419,34 @@
             <p>お問い合わせ</p>
           </div>
         </div>
-        <div class="line"></div>
         <div class="row fotter justify-content-center fotter_copyright">
-          <div class="col-lg-3 copyright">
-            TM & © Universal Studios. All rights reserved.<br>
+          <div class="col-lg-3 copyright  fotter_line">
+            <p>TM & © Universal Studios. All rights reserved.<br>
             ※写真はイメージです<br>
-            ※本サイト上の画像や動画には、ご来場時点での運営策や衛生強化対策ガイドラインに準じていないものも含まれています
+            ※本サイト上の画像や動画には、ご来場時点での運営策や衛生強化対策ガイドラインに準じていないものも含まれています</p>
           </div>
-          <div class="col-lg-1 fotter_copyright_menu">著作権と商標＞</div>
-          <div class="col-lg-1 fotter_copyright_menu">このサイトについて＞</div>
-          <div class="col-lg-1 fotter_copyright_menu">交通アクセス＞</div>
-          <div class="col-lg-1 fotter_copyright_menu">施設案内・安全管理＞</div>
-          <div class="col-lg-1 fotter_copyright_menu">プライバシーポリシー＞</div>
-          <div class="col-lg-1 fotter_copyright_menu">サイトマップ＞</div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive3"></div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive3">
+            <p>著作権と商標＞</p>
+          </div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive3">
+            <p>このサイトについて＞</p>
+          </div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive3">
+           <p>交通アクセス＞</p>
+          </div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive3">
+            <p>施設案内・安全管理＞</p>
+          </div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive3">
+            <p>プライバシーポリシー＞</p>
+          </div>
+          <div class="col-lg-1 fotter_copyright_menu  fotter_line_responsive4">
+            <p>サイトマップ＞</p>
+          </div>
         </div>
         <div class="row fotter_bottom"></div>
+      </fotter>
     </div>
     <script src="script.js"></script> 
   </body>
