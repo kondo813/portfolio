@@ -1,6 +1,9 @@
 body{
   font-family: "Tazugane Info", "ヒラギノ角ゴ シック W0", "Hiragino Sans", 游ゴシック, YuGothic, ＭＳ ゴシック, "MS Gothic", "Noto Sans CJK JP", sans-serif;
 }
+.container-fluid{
+  overflow: hidden;
+}
 .navbar-menu {
   position: fixed;
   top: 0;
@@ -26,7 +29,7 @@ body{
   color: #fff;
   margin-right: 10px;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 999px){
   .header1_menu li{
     display:none;
   }
@@ -52,8 +55,6 @@ body{
 .navbar-menu ul li a:hover {
   color: #fbbd00;
 }
-
-
 .header1{
   background: linear-gradient(#015EC9, #0273EE);
   height: 90px;
@@ -65,10 +66,11 @@ body{
   z-index: 1;
   padding-left: 125px;
 }
-/* .header1_img{
-  width: 141px;
-  height: 74px;
-} */
+@media screen and (max-width: 999px){
+  .header1{
+    display:none;
+  }
+} 
 .header2{
   background-color: #0467D9;
   height: 60px;
@@ -83,25 +85,86 @@ body{
 .header2_menu{
   margin-top: 10px;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 999px){
   .header2{
     display:none;
   }
 } 
-.ticket_menu{
+.header2 .ticket_menu{
   background-color: white;
   color: #0467D9;
+  height: 60px;
+  width: 230px;
   font-size: 14px;
   font-weight: bold;
-  padding-top: 20px;
-  margin-bottom: 2px;
+  padding-top: 15px;
 }
-.header2 img{
+.header_icon{
   width: 80px;
   margin-right: -20px;
 }
-.slide{
-  height: 606px;
+.down_arrow{
+  width: 30px;
+}
+.header3{
+  background-color: #0474F0;
+  height: 45px;
+  font-size: 12px;
+  color: white;
+}
+.header3 a{
+  color: white;
+  text-decoration: none;
+}
+.header3 span{
+  text-decoration: underline;
+}
+@media screen and (min-width: 600px){
+  .header3{
+    display:none;
+  }
+} 
+.header4{
+  background-color: #0467D9;
+  height: 75px;
+  font-size: 12px;
+  color: white;
+}
+.header4_logo{
+  width: 80px;
+  margin-right: -20px;
+}
+.header4 .ticket_menu{
+  background-color: white;
+  color: #0467D9;
+  height: 80px;
+  width: 230px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+@media screen and (min-width: 1000px){
+  .header4{
+    display:none;
+  }
+} 
+@media screen and (max-width: 599px){
+  .header4 .ticket_menu{
+    display:none;
+  }
+} 
+.header5{
+  background-color: white;
+  color: #0467D9;
+  height: 75px;
+}
+@media screen and (min-width: 600px){
+  .header5{
+    display:none;
+  }
+} 
+.slide img{
+  /* height: 606px; */
   background-color: #949494;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
@@ -119,7 +182,7 @@ body{
   font-weight: bold;
 }
 .topmenu{
-  height: 104px;
+  height: 150px;
   font-size: 12px;
   border-radius: 30px;
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
@@ -128,14 +191,18 @@ body{
   margin-top: -40px;
   margin-bottom: 20px;
   background-color: white;
+  position: absolute;
+  z-index: 1;
+  margin-left: 10%;
 }
 @media screen and (max-width: 1000px){
   .topmenu{
-    width: 99%;
+    width: 97%;
     height: 100%;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    position: relative;
   }
 } 
 .topmenu img{
@@ -158,13 +225,16 @@ body{
     margin: auto 0;
   }
 } 
-
-
 /* メイン */
 .mainmenu{
   background-color: #19307A;
   height: 154px;
   color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+.mainmenu img{
+  width: 90px;
 }
 
 /* ピックアップ */
@@ -172,7 +242,22 @@ body{
   border-radius: 13px;
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
 } */
-
+.picup{
+  margin-top: 10%;
+}
+@media screen and (max-width: 1000px){
+  .picup{
+    margin-top: 0;
+  }
+} 
+.picup ul{
+  text-align: center;
+  width: 90%;
+}
+.picup li{
+  list-style: none;
+  width: 270px;
+}
 .picup_content_img{
   background-color: #19307A;
   border-radius: 13px 13px 0 0;
@@ -186,7 +271,7 @@ body{
 }
 
 /* ひっくり返るカード */
-/* * {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -253,6 +338,9 @@ body {
 .useful_information h2{
   width: 81%;
   margin-bottom: 20px;
+}
+.useful_information ul{
+  text-align: center;
 }
 .useful_information_img{
   background-color: #f4ea79;
@@ -422,12 +510,3 @@ body {
   background-color: #0467D9;
   height: 40px;
 }
-
-
-.line{
-  background: #4d3d2692;
-  width: 85%;
-  height: 2px;
-  margin: 0 90px;
-}
-
