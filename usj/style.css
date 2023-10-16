@@ -4,6 +4,116 @@ body{
 .container-fluid{
   overflow: hidden;
 }
+.header1{
+  background: linear-gradient(#015EC9, #0273EE);
+  height: 90px;
+  font-size: 12px;
+}
+@media screen and (max-width: 999px){
+  .header1{
+    display:none;
+  }
+} 
+.header1_logo{
+  height: 85%;
+}
+.header1_menu{
+  list-style: none;
+  margin-top: 35px;
+}
+.header1_menu a{
+  text-decoration: none;
+  color: #fff;
+}
+.header1_menu span{
+  text-decoration: underline;
+}
+.header1_menu select{
+  color: white;
+  background: none;
+  border: none;
+}
+.header2{
+  background-color: #0467D9;
+  height: 60px;
+  font-size: 12px;
+  color: white;
+}
+.header2_menu{
+  margin-top: 10%;
+}
+@media screen and (max-width: 999px){
+  .header2{
+    display:none;
+  }
+} 
+.header2 .ticket_menu{
+  background-color: white;
+  color: #0467D9;
+  height: 60px;
+  width: 230px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.header2_icon{
+  width: 50px;
+}
+.header2 .down_arrow{
+  width: 30px;
+}
+.header3{
+  background-color: #0474F0;
+  height: 45px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+.header3 a{
+  color: white;
+  text-decoration: none;
+}
+.header3 span{
+  text-decoration: underline;
+}
+@media screen and (min-width: 600px){
+  .header3{
+    display:none;
+  }
+} 
+.header4{
+  background-color: #0467D9;
+  height: 75px;
+  font-size: 12px;
+}
+@media screen and (min-width: 1000px){
+  .header4{
+    display:none;
+  }
+} 
+.header4_logo{
+  height: 85px;
+}
+.header4 .ticket_menu{
+  background-color: white;
+  color: #0467D9;
+  height: 75px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.header4 .down_arrow{
+  width: 30px;
+}
+.header4_icon{
+  width: 60px;
+}
+@media screen and (max-width: 599px){
+  .header4 .ticket_menu{
+    display:none;
+  }
+} 
+/* ハンバーガーメニュー */
 .navbar-menu {
   position: fixed;
   top: 0;
@@ -21,19 +131,6 @@ body{
 .navbar-brand img {
   width: 50%;
 }
-.header1_menu{
-  list-style: none;
-}
-.header1_menu a{
-  text-decoration: none;
-  color: #fff;
-  margin-right: 10px;
-}
-@media screen and (max-width: 999px){
-  .header1_menu li{
-    display:none;
-  }
-} 
 .navbar-menu ul {
   list-style: none;
   padding: 0;
@@ -55,114 +152,26 @@ body{
 .navbar-menu ul li a:hover {
   color: #fbbd00;
 }
-.header1{
-  background: linear-gradient(#015EC9, #0273EE);
-  height: 90px;
-  font-size: 12px;
-  color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  padding-left: 125px;
-}
-@media screen and (max-width: 999px){
-  .header1{
-    display:none;
-  }
-} 
-.header2{
-  background-color: #0467D9;
-  height: 60px;
-  font-size: 12px;
-  padding-left: 140px;
-  color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 87px;
-  z-index: 1;
-}
-.header2_menu{
-  margin-top: 10px;
-}
-@media screen and (max-width: 999px){
-  .header2{
-    display:none;
-  }
-} 
-.header2 .ticket_menu{
-  background-color: white;
-  color: #0467D9;
-  height: 60px;
-  width: 230px;
-  font-size: 14px;
-  font-weight: bold;
-  padding-top: 15px;
-}
-.header_icon{
-  width: 80px;
-  margin-right: -20px;
-}
-.down_arrow{
-  width: 30px;
-}
-.header3{
-  background-color: #0474F0;
-  height: 45px;
-  font-size: 12px;
-  color: white;
-}
-.header3 a{
-  color: white;
-  text-decoration: none;
-}
-.header3 span{
-  text-decoration: underline;
-}
-@media screen and (min-width: 600px){
-  .header3{
-    display:none;
-  }
-} 
-.header4{
-  background-color: #0467D9;
-  height: 75px;
-  font-size: 12px;
-  color: white;
-}
-.header4_logo{
-  width: 80px;
-  margin-right: -20px;
-}
-.header4 .ticket_menu{
-  background-color: white;
-  color: #0467D9;
-  height: 80px;
-  width: 230px;
-  font-size: 14px;
-  font-weight: bold;
-  padding-top: 15px;
-}
-@media screen and (min-width: 1000px){
-  .header4{
-    display:none;
-  }
-} 
-@media screen and (max-width: 599px){
-  .header4 .ticket_menu{
-    display:none;
-  }
-} 
+
 .header5{
   background-color: white;
   color: #0467D9;
-  height: 75px;
+  height: 60px;
 }
 @media screen and (min-width: 600px){
   .header5{
     display:none;
   }
 } 
+.header5 .down_arrow{
+  width: 30px;
+  margin: 10px;
+}
+.header5 p{
+  font-size: 13px;
+  margin-top: 20px;
+}
+/* カルーセル */
 .slide img{
   /* height: 606px; */
   background-color: #949494;
@@ -231,17 +240,12 @@ body{
   height: 154px;
   color: white;
   padding-top: 20px;
-  text-align: center;
 }
 .mainmenu img{
   width: 90px;
 }
 
 /* ピックアップ */
-/* .picup_content{
-  border-radius: 13px;
-  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
-} */
 .picup{
   margin-top: 10%;
 }
@@ -250,14 +254,6 @@ body{
     margin-top: 0;
   }
 } 
-.picup ul{
-  text-align: center;
-  width: 90%;
-}
-.picup li{
-  list-style: none;
-  width: 270px;
-}
 .picup_content_img{
   background-color: #19307A;
   border-radius: 13px 13px 0 0;
@@ -268,21 +264,10 @@ body{
 }
 .picup_content p{
   font-size: 15px;
+  height: 150px;
 }
 
 /* ひっくり返るカード */
-/* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-} */
 .picup_content {
   position: relative;
   -webkit-perspective: 1000px;
@@ -291,7 +276,6 @@ body {
 }
 .picup_content .front, .picup_content .back {
   top: 0;
-  /* left: 0; */
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -339,9 +323,9 @@ body {
   width: 81%;
   margin-bottom: 20px;
 }
-.useful_information ul{
+/* .useful_information ul{
   text-align: center;
-}
+} */
 .useful_information_img{
   background-color: #f4ea79;
 }

@@ -18,44 +18,63 @@
   <body>
     <div class="container-fluid p-0 list-inline-item">
       <header>
-        <!-- ナビゲーションバー -->
-        <nav class="navbar navbar-expand-lg navbar-light header1">
-          <a class="navbar-brand" href="#">
-            <img src="image/usj-logo.svg" alt="USJ ロゴ">
-          </a>
-          <ul class="d-flex header1_menu">
-            <li><a href="#">日本語</a></li>
-            <li><a href="#">サービスガイド＞</a></li>
-            <li><a href="#">交通アクセス＞</a></li>
-            <li><a href="#">会員登録|ログイン＞</a></li>
-            <li><a href="#">チケット情報</a></li>
-            <li><a href="#">本日の営業時間8:30~21:30</a></li>
-          </ul>
-        </nav>
+        <div class="row header1">
+          <div class="col-3 offset-lg-1">
+            <a class="navbar-brand" href="https://kksportfolio.website/usj/index.html">
+              <img src="image/usj-logo.svg" alt="USJ ロゴ" class="img-fluid pt-2 header1_logo">
+            </a>
+          </div>
+          <div class="col-7 offset-lg-1">
+            <ul class="d-flex header1_menu">
+              <li class="ms-4 me-3">
+                <select name="header1_language">
+                  <option value="日本語">日本語</option>
+                  <option value="English">English</option>
+                  <option value="簡体中文">簡体中文</option>
+                  <option value="한국어">한국어</option>
+                  <option value="繁体中文">繁体中文</option>
+                </select></li>
+              <li class="me-3"><a href="#">サービスガイド＞</a></li>
+              <li class="me-3"><a href="#">交通アクセス＞</a></li>
+              <li class="me-5"><a href="#">会員登録|ログイン＞</a></li>
+              <li><a href="#">本日の営業時間<span>8:30~21:30</span></a></li>
+            </ul>
+          </div>
+        </div>
         <div class="row header2">
-          <div class="col-lg-1"><p class="header2_menu">イベント&<br>アトラクション</p></div>
+          <div class="col-lg-1 offset-lg-1"><p class="header2_menu">イベント&<br>アトラクション</p></div>
           <div class="col-lg-1"><p class="header2_menu">パークの楽しみ方</p></div>
           <div class="col-lg-1"><p class="header2_menu">フード＆<br>グッズ</p></div>
           <div class="col-lg-1"><p class="header2_menu">旅行プラン＆<br>ホテル</p></div>
           <div class="col-lg-1"><p class="header2_menu">チケット情報</p></div>
-          <div class="col-lg-2 offset-lg-3 ticket_menu"><p>チケットを探す・購入する <img src="image/下矢印.svg" alt="" class="down_arrow"></p></div>
-          <img src="image/shopping_icon.svg" alt="" class="header_icon">
-          <img src="image/search_icon.svg" alt="" class="header_icon">
+          <div class="col-lg-2 offset-lg-2 ticket_menu"><p>チケットを探す・購入する <img src="image/下矢印.svg" alt="" class="down_arrow"></p></div>
+          <div class="col-lg-1 d-flex">
+            <img src="image/shopping_icon.svg" alt="" class="img-fluid header2_icon">
+            <img src="image/search_icon.svg" alt="" class="img-fluid header2_icon">
+          </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light header3">
+        <div class="row header3">
+          <div class="col pt-2">
             <a href="#">本日の営業時間 <span>08:30 〜 21:30</span></a>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-light header4">
-          <a class="navbar-brand" href="#">
-            <img src="image/usj-logo.svg" alt="USJ ロゴ" class="header4_logo">
-          </a>
-          <div class="col-lg-2 offset-lg-3 ticket_menu"><p>チケットを探す・購入する <img src="image/下矢印.svg" alt="" class="down_arrow"></p></div>
-          <img src="image/shopping_icon.svg" alt="" class="header_icon">
-          <img src="image/search_icon.svg" alt="" class="header_icon">
+          </div>
+        </div>
+        <div class="row justify-content-between header4">
+          <div class="col-2">
+            <a href="https://kksportfolio.website/usj/index.html">
+              <img src="image/usj-logo.svg" alt="USJ ロゴ" class="img-fluid ps-2 pb-1 header4_logo">
+            </a>
+          </div>
+          <div class="col-8 d-flex">
+            <div class="ticket_menu">
+              <p>チケットを探す・購入する <img src="image/下矢印.svg" alt="" class="down_arrow"></p>
+            </div>
+            <img src="image/shopping_icon.svg" alt="" class="header4_icon">
+            <img src="image/search_icon.svg" alt="" class="header4_icon">
           <!-- ハンバーガーボタン -->
-          <button class="navbar-toggler" type="button" id="toggleButton" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" id="toggleButton" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <!-- ハンバーガーメニュー -->
           <div class="navbar-menu" id="menu">
             <ul>
@@ -70,10 +89,14 @@
               <li><a href="#">本日の営業時間8:30~21:30</a></li>
             </ul>
           </div>
-        </nav>
-        <nav class="header5">
-          <div class="ticket_menu"><p>チケットを探す・購入する <img src="image/下矢印.svg" alt="" class="down_arrow"></p></div>
-        </nav>
+        </div>
+        <div class="row header5">
+          <div class="col ticket_menu d-flex justify-content-between">
+            <img src="image/下矢印.svg" alt="" class="down_arrow">
+            <p>チケットを探す・購入する</p>
+            <img src="image/下矢印.svg" alt="" class="down_arrow">
+          </div>
+        </div>
       </header>
       <main>
         <!-- カルーセル -->
@@ -131,178 +154,182 @@
           </div>
         </div>
         <!-- ピックアップ -->
-        <section class="row justify-content-center picup">
-          <h2>ピックアップ</h2>
-          <ul class="list-inline">
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『ユニハロ』</h3>
-                <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
-              </div>
-              <div class="back">
-                <h3>『ユニハロ』</h3>
-                <p>ユニハロ限定！お得な宿泊プランをJTBで販売中</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『ハロウィーン・ホラー・ナイト』</h3>
-                <p>開催期間：2023年9月8日（金）～ 11月5日（日）</p>
-              </div>
-              <div class="back">
-                <h3>『ハロウィーン・ホラー・ナイト』</h3>
-                <p>史上最多ゾンビ＆超凶悪ホラーのオンパレード！ 腹の底から大絶叫して、超スッキリ！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『ハハハ！ハロウィーン・パーティー』</h3>
-                <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
-              </div>
-              <div class="back">
-                <h3>『ハハハ！ハロウィーン・パーティー』</h3>
-                <p>かわいくて楽しくて大笑いしちゃう、最高にゴキゲンな熱狂デイタイム！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『スーパー・ニンテンドー・ワールド™』</h3>
-                <p>現在運営中！</p>
-              </div>
-              <div class="back">
-                <h3>『スーパー・ニンテンドー・ワールド™』</h3>
-                <p>#WE ARE MARIO!!<br>
-                  アソビの本能、解き放て！<br>
-                  誰かと真剣に競い合ったり、仲間と協力したり、夢中になって遊ぶ時、人は誰だって最高にいい顔。そう、みんな、遊ぶために生まれてきたんだ！世界中で愛される、あのゲームの世界に入り込んで、マリオのように、体ごと全力で遊ぶ…。ここは、子どもも大人も誰もが、五感のすべてを解放して、本気で遊べる、世界で唯一の遊び場。合言葉は「#WE ARE MARIO!!」さあ、アソビの本能を解き放て！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『NO LIMIT!パレード』</h3>
-                <p>開催期間：2023年3月1日（水）～</p>
-              </div>
-              <div class="back">
-                <h3>『NO LIMIT!パレード』</h3>
-                <p>さあ、最高に熱いダンス・パーティのはじまりだ！みんなが主役の超熱狂パレードで、超元気になろう！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h3>
-                <p>開催期間：2023年3月17日（金）〜 12月31日（日）</p>
-              </div>
-              <div class="back">
-                <h3>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h3>
-                <p>この世界が、じっとしているわけがない。この世界は、生きている。いつも生命に満ちあふれ、訪れる度、新たな魔法体験との出会いにワクワクするこの別世界が、また一つ進化。ついに、魔法生物も息づき始めた！ 目覚め続けるこの世界では、あなたの魔法の旅は終わらない。</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『ワンピース・プレミア・サマー2023』</h3>
-                <p>開催期間：2023年7月5日（水）〜 10月10日（火）</p>
-              </div>
-              <div class="back">
-                <h3>『ワンピース・プレミア・サマー2023』</h3>
-                <p>すべてが限界突破(ノーリミット)！ お前の本気を見せてみろ！ 全アトラクションに最強メンバー大集結で、今年はまさに限界突破！ 過去最高に大熱狂、この夏だけのワンピースを超本気で楽しみつくせ！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『呪術廻戦・ザリアル・4-D』</h3>
-                <p>開催期間：2022年9月16日（金）～ 2023年11月5日（日）</p>
-              </div>
-              <div class="back">
-                <h3>『呪術廻戦・ザリアル・4-D』</h3>
-                <p>呪霊に挑む、覚悟はあるか。<br>
-                  呪術戦に間近で遭遇する、衝撃の4-Dアトラクション、出現。</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
-                <h3>『NO LIMIT!クリスマス』</h3>
-                <p>開催期間：2023年11月21日（火）～ 2024年1月8日（月）</p>
-              </div>
-              <div class="back">
-                <h3>『NO LIMIT!クリスマス』</h3>
-                <p>We wish ”YEAH!” Merry Christmas! いつもの冬をぶっとばせ！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="picup_content_img">
-                <h3>『NO LIMIT!カウントダウン2024』</h3>
-                <p>開催期間：2023年12月31日（日）19:00～2024年1月1日（月）21:00</p>
-              </div>
-              <div class="back">
-                <h3>『NO LIMIT!カウントダウン2024』</h3>
-                <p>これが完売必至の“超熱狂”！ 一夜限りの贅沢な宴が今年も！</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="picup_content_img">
-                <h3>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h3>
-                <p>開催期間：2023年7月4日（火）〜 2024年1月22日（月）</p>
-              </div>
-              <div class="back">
-                <h3>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h3>
-                <p>ラスト・アメージング 20年つないだ絆に、ありがとう。<br>
-                  伝説のライドが、ついにファイナル！ たくさんの思い出に、大いなる「ありがとう」を込めて。さあ、ラスト・アメージングを、ご一緒に。</p>
-              </div>
-            </li>
-            <li class="col-11 col-sm-5 col-lg-2 m-3 p-0 list-inline-item picup_content">
-              <div class="front">
-                <img src="image/usj-logo.svg" class="picup_content_img">
-                <h3>『NO LIMIT!』</h3>
-                <p>開催期間：2022年3月29日（火）～</p>
-              </div>
-              <div class="back">
-                <h3>『NO LIMIT!』</h3>
-                <p>ぶっとべ！ここは超元気特区<br>
-                  思いっきりはしゃごう。<br>
-                  ありえないくらい笑おう。<br>
-                  ドデカい声で叫ぼう。<br>
-                  人生には、ぶっ飛んだ1日が必要だ。</p>
-              </div>
-            </li>
-            <div class="picup_bottom_line"></div>
-          </ul>
+        <section>
+          <div class="row picup">
+            <h2>ピックアップ</h2>
+            <ul class="list-inline">
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『ユニハロ』</h3>
+                  <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
+                </div>
+                <div class="back">
+                  <h3>『ユニハロ』</h3>
+                  <p>ユニハロ限定！お得な宿泊プランをJTBで販売中</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『ハロウィーン・ホラー・ナイト』</h3>
+                  <p>開催期間：2023年9月8日（金）～ 11月5日（日）</p>
+                </div>
+                <div class="back">
+                  <h3>『ハロウィーン・ホラー・ナイト』</h3>
+                  <p>史上最多ゾンビ＆超凶悪ホラーのオンパレード！ 腹の底から大絶叫して、超スッキリ！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『ハハハ！ハロウィーン・パーティー』</h3>
+                  <p>開催期間：2023年9月7日（木）～ 11月5日（日）</p>
+                </div>
+                <div class="back">
+                  <h3>『ハハハ！ハロウィーン・パーティー』</h3>
+                  <p>かわいくて楽しくて大笑いしちゃう、最高にゴキゲンな熱狂デイタイム！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『スーパー・ニンテンドー・ワールド™』</h3>
+                  <p>現在運営中！</p>
+                </div>
+                <div class="back">
+                  <h3>『スーパー・ニンテンドー・ワールド™』</h3>
+                  <p>#WE ARE MARIO!!<br>
+                    アソビの本能、解き放て！<br>
+                    誰かと真剣に競い合ったり、仲間と協力したり、夢中になって遊ぶ時、人は誰だって最高にいい顔。そう、みんな、遊ぶために生まれてきたんだ！世界中で愛される、あのゲームの世界に入り込んで、マリオのように、体ごと全力で遊ぶ…。ここは、子どもも大人も誰もが、五感のすべてを解放して、本気で遊べる、世界で唯一の遊び場。合言葉は「#WE ARE MARIO!!」さあ、アソビの本能を解き放て！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『NO LIMIT!パレード』</h3>
+                  <p>開催期間：2023年3月1日（水）～</p>
+                </div>
+                <div class="back">
+                  <h3>『NO LIMIT!パレード』</h3>
+                  <p>さあ、最高に熱いダンス・パーティのはじまりだ！みんなが主役の超熱狂パレードで、超元気になろう！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h3>
+                  <p>開催期間：2023年3月17日（金）〜 12月31日（日）</p>
+                </div>
+                <div class="back">
+                  <h3>『マジカル・クリーチャーズ・エンカウンター　〜魔法生物との出会い〜』</h3>
+                  <p>この世界が、じっとしているわけがない。この世界は、生きている。いつも生命に満ちあふれ、訪れる度、新たな魔法体験との出会いにワクワクするこの別世界が、また一つ進化。ついに、魔法生物も息づき始めた！ 目覚め続けるこの世界では、あなたの魔法の旅は終わらない。</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『ワンピース・プレミア・サマー2023』</h3>
+                  <p>開催期間：2023年7月5日（水）〜 10月10日（火）</p>
+                </div>
+                <div class="back">
+                  <h3>『ワンピース・プレミア・サマー2023』</h3>
+                  <p>すべてが限界突破(ノーリミット)！ お前の本気を見せてみろ！ 全アトラクションに最強メンバー大集結で、今年はまさに限界突破！ 過去最高に大熱狂、この夏だけのワンピースを超本気で楽しみつくせ！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『呪術廻戦・ザリアル・4-D』</h3>
+                  <p>開催期間：2022年9月16日（金）～ 2023年11月5日（日）</p>
+                </div>
+                <div class="back">
+                  <h3>『呪術廻戦・ザリアル・4-D』</h3>
+                  <p>呪霊に挑む、覚悟はあるか。<br>
+                    呪術戦に間近で遭遇する、衝撃の4-Dアトラクション、出現。</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="img-fluid picup_content_img">
+                  <h3>『NO LIMIT!クリスマス』</h3>
+                  <p>開催期間：2023年11月21日（火）～ 2024年1月8日（月）</p>
+                </div>
+                <div class="back">
+                  <h3>『NO LIMIT!クリスマス』</h3>
+                  <p>We wish ”YEAH!” Merry Christmas! いつもの冬をぶっとばせ！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="picup_content_img">
+                  <h3>『NO LIMIT!カウントダウン2024』</h3>
+                  <p>開催期間：2023年12月31日（日）19:00～2024年1月1日（月）21:00</p>
+                </div>
+                <div class="back">
+                  <h3>『NO LIMIT!カウントダウン2024』</h3>
+                  <p>これが完売必至の“超熱狂”！ 一夜限りの贅沢な宴が今年も！</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="picup_content_img">
+                  <h3>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h3>
+                  <p>開催期間：2023年7月4日（火）〜 2024年1月22日（月）</p>
+                </div>
+                <div class="back">
+                  <h3>『「スパイダーマン・ザ・ライド」ファイナル・キャンペーン』</h3>
+                  <p>ラスト・アメージング 20年つないだ絆に、ありがとう。<br>
+                    伝説のライドが、ついにファイナル！ たくさんの思い出に、大いなる「ありがとう」を込めて。さあ、ラスト・アメージングを、ご一緒に。</p>
+                </div>
+              </li>
+              <li class="col-11 col-sm-5 col-lg-2 m-3 list-inline-item picup_content">
+                <div class="front">
+                  <img src="image/usj-logo.svg" class="picup_content_img">
+                  <h3>『NO LIMIT!』</h3>
+                  <p>開催期間：2022年3月29日（火）～</p>
+                </div>
+                <div class="back">
+                  <h3>『NO LIMIT!』</h3>
+                  <p>ぶっとべ！ここは超元気特区<br>
+                    思いっきりはしゃごう。<br>
+                    ありえないくらい笑おう。<br>
+                    ドデカい声で叫ぼう。<br>
+                    人生には、ぶっ飛んだ1日が必要だ。</p>
+                </div>
+              </li>
+              <div class="picup_bottom_line"></div>
+            </ul>
+          </div>
         </section>
         <!-- お役立ち情報 -->
-        <section class="row justify-content-center useful_information">
-          <h2>お役立ち情報</h2>
-          <ul class="list-inline">
-            <li class="col-sm-4 col-lg-3 list-inline-item useful_information_content">
-              <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
-              <h3>【スーパー・ニンテンドー・ワールド™　攻略ガイド】</h3>
-              <p>マリオの世界を確実に楽しみつくすためのテッパン・ガイド！【基礎編】から【応用編】まで公開中！</p>
-              <button class="news_btn" type="button">詳しくはこちら</button>
-            </li>
-            <li class="col-6 col-sm-4 col-lg-3 list-inline-item useful_information_content">
-              <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
-              <h3>来場前に公式アプリをダウンロード！</h3>
-              <p>公式アプリで、もっとパークを楽しもう！</p>
-              <button class="news_btn" type="button">詳しくはこちら</button>
-            </li>
-            <li class="col-6 col-sm-4 col-lg-3 list-inline-item useful_information_content">
-              <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
-              <h3>ユニバース・プライム年間パス　“人生に、もっとUSJを。”</h3>
-              <p>生まれ変わった「ユニバーサル・プライム年間パス」で、笑顔あふれる大興奮の一年が、あなたのものに。
-                驚きの特典の数々で、新しい楽しみ方が叶うから、パークに来ていない時だって、毎日が元気いっぱいに！
-                あなたとパークがもっともっと近くなる年間パス、誕生。</p>
+        <section>
+          <div class="row justify-content-center useful_information">
+            <h2>お役立ち情報</h2>
+            <ul class="list-inline">
+              <li class="col-sm-4 col-lg-3 list-inline-item useful_information_content">
+                <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
+                <h3>【スーパー・ニンテンドー・ワールド™　攻略ガイド】</h3>
+                <p>マリオの世界を確実に楽しみつくすためのテッパン・ガイド！【基礎編】から【応用編】まで公開中！</p>
                 <button class="news_btn" type="button">詳しくはこちら</button>
-            </li>
-            <div class="useful_information_bottom_line"></div>
-          </ul>
+              </li>
+              <li class="col-6 col-sm-4 col-lg-3 list-inline-item useful_information_content">
+                <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
+                <h3>来場前に公式アプリをダウンロード！</h3>
+                <p>公式アプリで、もっとパークを楽しもう！</p>
+                <button class="news_btn" type="button">詳しくはこちら</button>
+              </li>
+              <li class="col-6 col-sm-4 col-lg-3 list-inline-item useful_information_content">
+                <img src="image/usj-logo.svg" class="useful_information_img class="img-fluid">
+                <h3>ユニバース・プライム年間パス　“人生に、もっとUSJを。”</h3>
+                <p>生まれ変わった「ユニバーサル・プライム年間パス」で、笑顔あふれる大興奮の一年が、あなたのものに。
+                  驚きの特典の数々で、新しい楽しみ方が叶うから、パークに来ていない時だって、毎日が元気いっぱいに！
+                  あなたとパークがもっともっと近くなる年間パス、誕生。</p>
+                  <button class="news_btn" type="button">詳しくはこちら</button>
+              </li>
+              <div class="useful_information_bottom_line"></div>
+            </ul>
+          </div>
         </section>
         <div class="row justify-content-center mainmenu">
           <div class="col-2">
@@ -412,8 +439,8 @@
             <p>日本語</p>
             <p>ENGLISH</p>
             <p>簡体中文</p>
-            <p>韓国語</p>
-            <p>中文</p>
+            <p>한국어</p>
+            <p>繁体中文</p>
           </div>
         </div>
         <div class="row justify-content-center fotter fotter_menu">
