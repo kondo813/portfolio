@@ -1,184 +1,174 @@
-body{
+body {
   font-family: "Tazugane Info", "ヒラギノ角ゴ シック W0", "Hiragino Sans", 游ゴシック, YuGothic, "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", sans-serif;
   color: #333333;
 }
-.container-fluid{
+/* .container-fluid{
   overflow: hidden;
-}
-.header1{
-  background: linear-gradient(#015EC9, #0273EE);
+} */
+
+/* ヘッダー1 */
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   height: 90px;
+  padding: 0 150px;
+  background: linear-gradient(#015EC9, #0273EE);
   font-size: 12px;
   font-weight: 600;
 }
-@media screen and (max-width: 999px){
+.header1_logo {
+  margin-top: 5px;
+  height: 80px;
+}
+.header1_menu {
+  display: flex;
+  margin-top: 35px;
+  list-style: none;
+}
+.header1_menu1, .header1_menu2, .header1_menu3 {
+  margin-right: 16px;
+}
+.header1_menu4 {
+  margin-right: 50px;
+}
+.header1_menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.header1_menu span {
+  text-decoration: underline;
+}
+.header1_menu select {
+  color: #fff;
+  background: none;
+  border: none;
+}
+@media screen and (max-width: 999px) {
   .header1{
     display:none;
   }
 } 
-.header1_logo{
-  height: 85%;
-}
-.header1_menu{
-  list-style: none;
-  margin-top: 35px;
-}
-.header1_menu a{
-  text-decoration: none;
-  color: #fff;
-}
-.header1_menu span{
-  text-decoration: underline;
-}
-.header1_menu select{
-  color: white;
-  background: none;
-  border: none;
-}
-.header2{
-  background-color: #0467D9;
+
+/* ヘッダー２ */
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  top: 90px;
+  padding: 0 120px;
+  width: 100%;
   height: 60px;
+  background-color: #0467D9;
+  color: #fff;
   font-size: 11px;
   font-weight: 600;
-  color: white;
+}
+.header2_wrap {
+  z-index: 900;
+}
+.header2_lists {
+  display: flex;
+  list-style: none;
+}
+.header2_list {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  padding-left: 15px;
+  transition: all .3s;
+}
+.header2_list:hover {
+  background-color: #192C71;
+}
+.header2_list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all .3s;
+}
+.dropdown__lists {
+  display: none;/* デフォルトでは非表示 */
+  position: absolute;
+  width: 430px;
+  top: 60px;
+  left: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color: #192C71;
+  list-style: none;
+}
+.element {
+  display: none;
+}
+.open {
+  display: block;
+}
+.header2_list:hover {
+  display: block;/*ホバーしたら表示*/
+}
+.dropdown__list {
+  position: relative;
+  transition: all .3s;
+}
+.dropdown__list a {
+  font-size: 16px;
+  text-decoration: none;
+}
+.dropdown__list_top a:hover {
+  font-size: 18px;
+}
+.dropdown__list_bottom {
+  font-size: 10px;
+  font-weight: 400;
+}
+.header2_right{
   display: flex;
 }
-.header2_menu{
-  margin-top: 10%;
+.header2_line{
+  width: 95%;
+  margin: 20px auto;
+  border-bottom: 3px solid #9494947d;
 }
-@media screen and (max-width: 999px){
-  .header2{
-    display:none;
-  }
-} 
-.header2 .ticket_menu{
-  background-color: white;
-  color: #0467D9;
+/* チケットを探す・購入するドロップダウンメニュー */
+.ticket_menu {
+  z-index: 800;
   height: 60px;
   width: 230px;
+  background-color: #fff;
+  color: #0467D9;
   font-size: 14px;
-  margin-left: 17%;
-  z-index: 800;
-}
-.header2_icon{
-  width: 50px;
 }
 .header2 .down_arrow{
   width: 30px;
 }
-.gnavi__wrap {
-  z-index: 900;
-  margin-left: 7%;
-}
-.gnavi__lists {
-  display: flex;
-  list-style: none;
-  margin-top: 0;
-}
-.gnavi__list {
-  width: 120px;
-  height: 60px;
-  position: relative;
-  transition: all .3s;
-}
-.gnavi__list:hover {
-  background-color: #192C71;
-}
-/* .gnavi__list:not(:first-child)::before {
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all .3s;
-}
-.gnavi__list:hover::before {
-  background-color: #0071BB;
-} */
-.gnavi__list a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: white;
-  font-size: 11px;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  transition: all .3s;
-}
-.dropdown__lists {
-  display: none;/* デフォルトでは非表示の状態にしておく */
-  width: 430px;
-  position: absolute;
-  top: 60px;
-  left: -32px;
-  list-style: none;
-}
-.gnavi__list:hover .dropdown__lists {
-  display: block;/*Gナビメニューにホバーしたら表示*/
-}
-.dropdown__list {
-  background-color: #192C71;
-  transition: all .3s;
-  position: relative;
-  padding: 10px 20px;
-}
-/* .dropdown__list:not(:first-child)::before{
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #3492d1;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-.dropdown__list a:hover {
-  font-size: 18px;
-}
-.dropdown__list a {
-  font-size: 16px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-}
-/* .dropdown__list a::before {
-  content: '';
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  transform: rotate(135deg);
-  position: absolute;
-  right: 15px;
-  top: calc(50% - 5px);
-} */
-
-/* チケットを探す・購入するドロップダウンメニュー */
-.ticket_menu {
-  display: inline-block;
-  height: 60px;
-  z-index: 800;
-}
 .ticket_menu h5{
+  margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
 }
 .ticket_menu p{
+  margin-left: 10px;
+  margin-top: -5px;
   font-size: 14px;
   font-weight: 400;
 }
-.ticket_menu div{
-  background-color: #192C71;
-  color: white;
+.ticket{
   height: 46px;
+  padding-top: 10px;
+  background-color: #192C71;
+  color: #fff;
+  text-align: center;
 }
 #tg {
   display: none;
@@ -208,8 +198,8 @@ body{
   cursor: pointer;
 }
 .item {
+  display: flex;
   padding: 1em 1.5em;
-  display: block;
   background-color: #fff;
   position: relative;
   color: black;
@@ -220,6 +210,9 @@ body{
 .item:hover {
   background-color: #E0E0E0;
   color: #fff;
+}
+.ticketmenu_img{
+  width: 80px;
 }
 #tg:checked + .dropLabel {
   background: #162A75;
@@ -238,18 +231,30 @@ body{
 #tg:checked + .dropLabel > span {
   display: none; /* テキストを非表示にする */
 }
+.header2_icon{
+  width: 50px;
+}
+@media screen and (max-width: 999px){
+  .header2{
+    display:none;
+  }
+} 
 
-
-  
+/* ヘッダー３ */
 .header3{
-  background-color: #0474F0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   height: 45px;
+  padding-top: 14px;
+  background-color: #0474F0;
+  color: #fff;
   font-size: 12px;
-  color: white;
   text-align: center;
 }
 .header3 a{
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .header3 span{
@@ -260,41 +265,39 @@ body{
     display:none;
   }
 } 
+
+/* ヘッダー４ */
 .header4{
-  background-color: #0467D9;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
   height: 75px;
+  padding: 0 10px;
+  background-color: #0467D9;
   font-size: 12px;
+  font-weight: 600;
 }
-@media screen and (min-width: 1000px){
-  .header4{
-    display:none;
-  }
-} 
 .header4_logo{
-  height: 85px;
+  height: 64px;
+  margin-top: 5px;
+}
+.header4_right{
+  display: flex;
 }
 .header4 .ticket_menu{
-  background-color: white;
-  color: #0467D9;
   height: 75px;
+  background-color: #fff;
+  color: #0467D9;
   font-size: 14px;
-  padding-top: 15px;
 }
 .down_arrow{
   width: 30px;
 }
 .header4_icon{
   width: 60px;
-}
-@media screen and (max-width: 599px){
-  .header4 .ticket_menu{
-    display:none;
-  }
-} 
-.header4 .ticket_menu{
-  height: 75px;
-  padding-top: 0;
-  width: 50%;
 }
 .header4 .dropLabel{
   padding-top: 20px;
@@ -323,55 +326,46 @@ body{
 #tg2:checked + .dropLabel > span {
   display: none; /* テキストを非表示にする */
 }
-/* ハンバーガーメニュー */
-.navbar-menu {
-  position: fixed;
-  top: 0;
-  right: -290px; /* 初期位置は右に隠れている */
-  width: 290px; /* メニューの幅を設定 */
-  height: 100%;
-  background-color: #EDEDED;
-  padding-top: 60px; /* ロゴのためのスペースを確保 */
-  transition: right 0.3s ease-in-out; /* 右への移動にアニメーションを適用 */
-  z-index: 9999;
-}
-.navbar-menu.active {
-  right: 0; /* メニューが表示されると右からスライドイン */
-}
-.navbar-brand img {
-  width: 50%;
-}
-.navbar-menu ul {
-  list-style: none;
-  padding: 0;
-}
-.navbar-menu ul li {
-  margin: 15px 0;
-  text-align: center;
-}
-.navbar-menu ul li a {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  display: block;
-  background-color: #0467D9;
-  margin: 0 20px;
-  padding: 15px;
-  text-align: left;
-}
-.navbar-menu ul li a:hover {
-  color: #fbbd00;
-}
-.header5{
-  background-color: white;
-  color: #0467D9;
-  height: 60px;
-}
-@media screen and (min-width: 600px){
-  .header5{
+@media screen and (min-width: 1000px){
+  .header4{
     display:none;
   }
 } 
+@media screen and (max-width: 599px){
+  .header4 {
+    top: 45px;
+  }
+} 
+@media screen and (max-width: 599px){
+  .header4 .ticket_menu{
+    display:none;
+  }
+} 
+
+/* ヘッダー５ */
+.header5{
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  top: 120px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  color: #0467D9;
+}
+.header5 .ticket_menu{
+  display: flex;
+}
+.header5{
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  top: 120px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  color: #0467D9;
+}
 .header5 .down_arrow{
   width: 30px;
   margin: 10px;
@@ -406,8 +400,26 @@ body{
 #tg3:checked + .dropLabel > span {
   display: none; /* テキストを非表示にする */
 }
+@media screen and (min-width: 600px){
+  .header5{
+    display:none;
+  }
+} 
 
-
+/* メイン */
+main{
+  margin-top: 150px;
+}
+@media screen and (max-width: 999px){
+  main{
+    margin-top: 60px;
+  }
+} 
+@media screen and (max-width: 600px){
+  main{
+    margin-top: 180px;
+  }
+} 
 
 /* カルーセル */
 .carousel h1{
@@ -419,19 +431,21 @@ body{
   font-weight: 400;
 }
 .slide img{
-  /* height: 606px; */
+  width: 100%;
   background-color: #949494;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
-  background-color: #f4ea79;
+  background-color: yellow;
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
-.topimg2{
-  background-color: #1B3385;
-  color: white;
+.carousel_description{
   height: 180px;
+  padding-top: 20px;
+  padding-left: 10%;
+  background-color: #1B3385;
+  color: #fff;
 }
 .topmenu{
   height: 150px;
@@ -443,7 +457,7 @@ body{
   margin: 0 auto;
   margin-top: -40px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: #fff;
   position: absolute;
   z-index: 1;
   margin-left: 10%;
@@ -487,21 +501,28 @@ body{
   background-color: #192C71;
   color: #fff;
   }
+
 /* メイン */
 /* ピックアップ */
 .picup{
   margin-top: 10%;
 }
-@media screen and (max-width: 1000px){
-  .picup{
-    margin-top: 0;
-  }
-} 
 .picup h2{
+  margin-left: 10%;
+  margin-bottom: 30px;
   font-size: 32px;
   font-weight: 800;
 }
+.picup_contents{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  list-style: none;
+}
 .picup_content_img{
+  width: 100%;
+  height: 180px;
   background-color: #19307A;
   border-radius: 13px 13px 0 0;
 }
@@ -517,14 +538,31 @@ body{
   height: 150px;
   margin: 10px;
 }
+@media screen and (max-width: 1000px){
+  .picup{
+    margin-top: 0;
+  }
+} 
 
 /* ひっくり返るカード */
 .picup_content {
   position: relative;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  width: 270px;
+  height: 380px;
   border: none;
 }
+@media screen and (max-width: 1023px){
+  .picup_content{
+    width: 45%;
+  }
+} 
+@media screen and (max-width: 639px){
+  .picup_content{
+    width: 100%;
+  }
+} 
 .picup_content .front, .picup_content .back {
   top: 0;
   width: 100%;
@@ -537,13 +575,14 @@ body{
 .picup_content .front {
   border-radius: 13px;
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 .picup_content .back {
-  color: white;
+  position: absolute;
   background: #0467D9;
+  color: #fff;
   transform: rotateY(-180deg);
   border-radius: 13px;
-  position: absolute;
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
 }
 .flipped .front {
@@ -553,17 +592,40 @@ body{
   transform: rotateY(0);
 }
 .flipped .back h3{
+  margin: 20px;
+  color: #fff;
   font-size: 14px;
 }
 .flipped .back p{
+  margin: 20px;
   font-size: 12px;
 }
+.back_btn{
+  width: 130px;
+  height: 44px;
+  margin: 20px;
+  background-color: #fff;
+  color: #0467D9;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.card_tap{
+  text-align: right;
+  margin-top: -50px;
+}
+.card_tap img{
+  width: 50px;
+  margin-left: 190px;
+  border-bottom-right-radius: 13px;
+}
 .picup_bottom_line{
-  border-bottom: 1px solid #949494;
-  width: 81%;
+  width: 90%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-top: 50px;
+  border-bottom: 1px solid #949494;
 }
 @media screen and (max-width: 1000px){
   .picup_bottom_line{
@@ -575,11 +637,24 @@ body{
 /* お役立ち情報 */
 .useful_information h2{
   width: 81%;
-  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-bottom: 30px;
   font-size: 32px;
   font-weight: 800;
 }
+.useful_information_contents{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  list-style: none;
+}
+.useful_information_content {
+  width: 370px;
+}
 .useful_information_img{
+  width: 370px;
+  height: 247px;
   background-color: #f4ea79;
 }
 .useful_information_content h3{
@@ -593,7 +668,7 @@ body{
 }
 .useful_information_bottom_line{
   border-bottom: 1px solid #949494;
-  width: 81%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -602,24 +677,23 @@ body{
     width: 100%;
   }
 } 
+
+/* メインメニュー */
 .mainmenu{
-  background-color: #19307A;
+  display: flex;
   height: 154px;
-  color: white;
-  padding-top: 20px;
-  padding-left: 10%;
+  padding: 16px 100px;
+  background-color: #19307A;
+  color: #fff;
 }
 .mainmenu img{
   width: 90px;
 }
-/* 画像の親要素のスタイル */
 .mainmenu_img {
   cursor: pointer;
   margin-inline: auto;
   position: relative;
-
 }
-/* 画像のスタイル */
 .mainmenu_img img {
   position: absolute;
 }
@@ -637,9 +711,20 @@ body{
   font-weight: 700;
 }
 .mainmenu p{
-  font-size: 16px;
   margin-top: 95px;
+  font-size: 16px;
 }
+@media screen and (max-width: 1023px){
+  .mainmenu img{
+    width: 70px;
+    margin-top: 13px;
+  }
+  .mainmenu p{
+    margin-top: 85px;
+    font-size: 13px;
+  }
+} 
+
 /* ニューストピックス */
 .news_topics h2{
   border-bottom: 1px solid #949494;
@@ -676,7 +761,7 @@ body{
 .news_btn{
   width: 149px;
   height: 44px;
-  color: white;
+  color: #fff;
   background-color: #0467D9;
   border: none;
   border-radius: 3px;

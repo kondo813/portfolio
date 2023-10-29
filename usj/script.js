@@ -40,5 +40,22 @@ $(function(){
 });
 
 
+// トリガー要素を取得
+const header2Triggers = document.querySelectorAll(".header2__trigger");
 
+// 各トリガーにクリックイベントを追加
+header2Triggers.forEach(header2Trigger => {
+  header2Trigger.addEventListener("click", function (event) {
+    // クリックされたトリガーの次の要素（サブメニュー）を取得
+    const submenu = event.target.nextElementSibling;
+
+    // サブメニューが表示中であれば非表示にし、非表示であれば表示する
+    submenu.classList.toggle("open");
+
+    // サブメニューの親要素からマウスが離れたとき、サブメニューを非表示にする
+    header2Trigger.parentNode.addEventListener("mouseleave", function () {
+      submenu.classList.remove("open");
+    });
+  });
+});
 
