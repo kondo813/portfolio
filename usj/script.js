@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
 $('.menu-trigger').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('main').removeClass('open');
+    $('wrap').removeClass('open');
     $('nav').removeClass('open');
   } else {
     $(this).addClass('active');
-    $('main').addClass('open');
+    $('wrap').addClass('open');
     $('nav').addClass('open');
   }
 });
@@ -26,7 +26,7 @@ $('.overlay').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
     $('.menu-trigger').removeClass('active');
-    $('main').removeClass('open');
+    $('wrap').removeClass('open');
     $('nav').removeClass('open');      
   }
 });
@@ -58,4 +58,7 @@ header2Triggers.forEach(header2Trigger => {
     });
   });
 });
+
+
+
 

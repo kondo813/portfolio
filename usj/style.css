@@ -342,6 +342,141 @@ body {
   }
 } 
 
+/* ハンバーガーメニュー */
+.overlay {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.overlay.open {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.wrap {
+  /* height: 100%;
+  min-height: 100vh;
+  padding: 0 50px;
+  background-color: #eee; */
+  transition: all .5s;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.wrap.open {
+  transform: translateX(-250px);
+}
+.menu-trigger {
+  /* display: inline-block;
+  width: 36px;
+  height: 28px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  right: 30px; */
+  z-index: 100;
+/*   transform: translateX(0);
+  transition: transform .5s;
+ */}
+/* .menu-trigger.active {
+  transform: translateX(-250px);
+}
+ */
+ /* .menu-trigger span {
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+} */
+.hamburger_icon1{
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+.hamburger_icon2{
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+.menu-trigger.active .hamburger_icon1{
+  display: none;
+}
+.menu-trigger.active .hamburger_icon2{
+  display: block;
+}
+.menu-trigger.active {
+  z-index: 999;
+}
+
+ 
+nav {
+  width: 250px;
+  height: 100%;
+  padding-top: 100px;
+  background-color: #EDEDED;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 998;
+  transform: translate(250px);
+  transition: all .5s;
+}
+nav.open {
+  transform: translateZ(0);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  text-align: center;
+  margin: 5px 0;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  background-color: #0467D9;
+  margin: 0 15px;
+  padding: 15px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ヘッダー５ */
 .header5{
   display: flex;
@@ -435,10 +570,10 @@ main{
   background-color: #949494;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
-  background-color: yellow;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
 }
 .carousel_description{
   height: 180px;
@@ -447,6 +582,8 @@ main{
   background-color: #1B3385;
   color: #fff;
 }
+
+/* トップメニュー */
 .topmenu{
   height: 150px;
   font-size: 12px;
@@ -612,8 +749,9 @@ main{
   font-weight: 400;
 }
 .card_tap{
-  text-align: right;
-  margin-top: -50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .card_tap img{
   width: 50px;
