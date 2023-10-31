@@ -2,23 +2,22 @@ body {
   font-family: "Tazugane Info", "ヒラギノ角ゴ シック W0", "Hiragino Sans", 游ゴシック, YuGothic, "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP", sans-serif;
   color: #333333;
 }
-/* .container-fluid{
-  overflow: hidden;
-} */
-
 /* ヘッダー1 */
 .header1 {
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
   height: 90px;
-  padding: 0 150px;
   background: linear-gradient(#015EC9, #0273EE);
   font-size: 12px;
   font-weight: 600;
+}
+.header1_contents {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 1500px;
 }
 .header1_logo {
   margin-top: 5px;
@@ -55,18 +54,21 @@ body {
 
 /* ヘッダー２ */
 .header2 {
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   z-index: 999;
   top: 90px;
-  padding: 0 120px;
   width: 100%;
   height: 60px;
   background-color: #0467D9;
   color: #fff;
   font-size: 11px;
   font-weight: 600;
+}
+.header2_contents {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 1500px;
 }
 .header2_wrap {
   z-index: 900;
@@ -128,10 +130,6 @@ body {
 .dropdown__list_top a:hover {
   font-size: 18px;
 }
-.dropdown__list_bottom {
-  font-size: 10px;
-  font-weight: 400;
-}
 .header2_right{
   display: flex;
 }
@@ -140,6 +138,7 @@ body {
   margin: 20px auto;
   border-bottom: 3px solid #9494947d;
 }
+
 /* チケットを探す・購入するドロップダウンメニュー */
 .ticket_menu {
   z-index: 800;
@@ -233,6 +232,7 @@ body {
 }
 .header2_icon{
   width: 50px;
+  margin-top: -16px;
 }
 @media screen and (max-width: 999px){
   .header2{
@@ -362,44 +362,14 @@ body {
   opacity: 1;
 }
 .wrap {
-  /* height: 100%;
-  min-height: 100vh;
-  padding: 0 50px;
-  background-color: #eee; */
   transition: all .5s;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 .wrap.open {
   transform: translateX(-250px);
 }
 .menu-trigger {
-  /* display: inline-block;
-  width: 36px;
-  height: 28px;
-  vertical-align: middle;
-  cursor: pointer;
-  position: fixed;
-  top: 30px;
-  right: 30px; */
   z-index: 100;
-/*   transform: translateX(0);
-  transition: transform .5s;
- */}
-/* .menu-trigger.active {
-  transform: translateX(-250px);
 }
- */
- /* .menu-trigger span {
-  display: inline-block;
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-} */
 .hamburger_icon1{
   width: 40px;
   height: 40px;
@@ -410,8 +380,14 @@ body {
   display: none;
   width: 30px;
   height: 30px;
-  margin-top: 16px;
-  margin-right: 10px;
+  margin-top: -30px;
+}
+.hamburgermenu_language li{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+  color: #0467D9;
+  font-size: 14px;
 }
 .menu-trigger.active .hamburger_icon1{
   display: none;
@@ -422,12 +398,10 @@ body {
 .menu-trigger.active {
   z-index: 999;
 }
-
- 
 nav {
   width: 250px;
   height: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: #EDEDED;
   position: fixed;
   top: 0;
@@ -458,48 +432,22 @@ nav ul li a {
   text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ヘッダー５ */
 .header5{
   display: flex;
   position: fixed;
-  z-index: 999;
+  z-index: 998;
   top: 120px;
   width: 100%;
   height: 60px;
-  background-color: #fff;
   color: #0467D9;
 }
 .header5 .ticket_menu{
   display: flex;
-}
-.header5{
-  display: flex;
-  position: fixed;
-  z-index: 999;
-  top: 120px;
   width: 100%;
-  height: 60px;
-  background-color: #fff;
-  color: #0467D9;
+}
+.header5 .dropLabel{
+ margin: 0 auto;
 }
 .header5 .down_arrow{
   width: 30px;
@@ -507,10 +455,10 @@ nav ul li a {
 }
 .header5 p{
   font-size: 13px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .header5 .menu{
-  width: 100%;
+  width: 110%;
 }
 #tg3 {
   display: none;
@@ -524,6 +472,7 @@ nav ul li a {
   background: #162A75;
   color: #fff;
   height: 60px;
+  width: 100%;
 }
 #tg3:checked + .dropLabel > img {
   content: url('image/上矢印.svg');
@@ -561,20 +510,31 @@ main{
   font-size: 36px;
   font-weight: 800;
 }
+@media screen and (max-width: 639px){
+  .carousel h1{
+    font-size: 20px;
+    font-weight: 800;
+  }
+} 
 .carousel p{
   font-size: 16px;
   font-weight: 400;
 }
 .slide img{
   width: 100%;
-  background-color: #949494;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon{
   width: 50px;
   height: 50px;
-  background-color: yellow;
+  background-color: #ffffffab;
   border-radius: 50%;
 }
+@media screen and (max-width: 639px){
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 48px;
+    height: 48px;
+  }
+} 
 .carousel_description{
   height: 180px;
   padding-top: 20px;
@@ -597,7 +557,7 @@ main{
   background-color: #fff;
   position: absolute;
   z-index: 1;
-  margin-left: 10%;
+  margin-left: 8%;
   color: #797A7D;
   overflow: hidden;
 }
@@ -656,6 +616,7 @@ main{
   flex-wrap: wrap;
   gap: 20px 30px;
   list-style: none;
+  padding: 0;
 }
 .picup_content_img{
   width: 100%;
@@ -698,6 +659,7 @@ main{
 @media screen and (max-width: 639px){
   .picup_content{
     width: 100%;
+    margin: 0 10px;
   }
 } 
 .picup_content .front, .picup_content .back {
@@ -771,7 +733,6 @@ main{
   }
 } 
 
-
 /* お役立ち情報 */
 .useful_information h2{
   width: 81%;
@@ -786,6 +747,7 @@ main{
   flex-wrap: wrap;
   gap: 20px 30px;
   list-style: none;
+  padding: 0;
 }
 .useful_information_content {
   width: 370px;
@@ -819,8 +781,10 @@ main{
 /* メインメニュー */
 .mainmenu{
   display: flex;
+  justify-content: space-between;
+  gap: 10%;
   height: 154px;
-  padding: 16px 100px;
+  padding: 16px 10%;
   background-color: #19307A;
   color: #fff;
 }
