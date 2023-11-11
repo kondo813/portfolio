@@ -1,52 +1,4 @@
-/* ハンバーガーメニュー */
-.navbar-menu {
-  position: fixed;
-  top: 0;
-  right: -290px; /* 初期位置は右に隠れている */
-  width: 290px; /* メニューの幅を設定 */
-  height: 100%;
-  background-color: #EDEDED;
-  padding-top: 60px; /* ロゴのためのスペースを確保 */
-  transition: right 0.3s ease-in-out; /* 右への移動にアニメーションを適用 */
-  z-index: 9999;
-}
-.navbar-menu.active {
-  right: 0; /* メニューが表示されると右からスライドイン */
-}
-.navbar-brand img {
-  width: 50%;
-}
-.navbar-menu ul {
-  list-style: none;
-  padding: 0;
-}
-.navbar-menu ul li {
-  margin: 15px 0;
-  text-align: center;
-}
-.navbar-menu ul li a {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  display: block;
-  background-color: #0467D9;
-  margin: 0 20px;
-  padding: 15px;
-  text-align: left;
-}
-.navbar-menu ul li a:hover {
-  color: #fbbd00;
-}
 
-
-
-
-
-.wrapper {
-  height: 100%;
-  overflow-x: hidden;
-  position: relative;
-}
 .overlay {
   content: "";
   display: block;
@@ -65,7 +17,7 @@
   height: 100%;
   opacity: 1;
 }
-main {
+.wrap {
   height: 100%;
   min-height: 100vh;
   padding: 0 50px;
@@ -75,14 +27,14 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.nac.open {
+.wrap.open {
   transform: translateX(-250px);
 }
-main h1 {
+.wrap h1 {
   text-align: center;
   font-weight: 500;
 }
-main p {
+.wrap p {
   text-align: center;
 }
 .menu-trigger {
@@ -108,11 +60,11 @@ main p {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #fff;
-  /* transition: all .5s; */
+  background-color: #000;
+  transition: all .5s;
 }
 .menu-trigger.active span {
-  background-color: black;
+  background-color: #fff;
 }
 .menu-trigger span:nth-of-type(1) {
   top: 0;
@@ -137,7 +89,7 @@ nav {
   width: 250px;
   height: 100%;
   padding-top: 100px;
-  background-color: #EDEDED;
+  background-color: rgb(16, 69, 153, 0.8);
   position: fixed;
   top: 0;
   right: 0;
@@ -148,21 +100,35 @@ nav {
 nav.open {
   transform: translateZ(0);
 }
-nav ul {
-  list-style: none;
-  padding: 0;
-}
 nav li {
-  text-align: center;
-  margin: 5px 0;
-}
-nav ul li a {
   color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  display: block;
-  background-color: #0467D9;
-  margin: 0 15px;
-  padding: 15px;
-  text-align: left;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+body{
+  height: 1000px;
+}
+.button{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 50px;
+  color: #fff;
+  background: #000;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+  
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
 }

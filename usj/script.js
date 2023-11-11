@@ -18,34 +18,48 @@ header2Triggers.forEach(header2Trigger => {
   });
 });
 
-// ハンバーガーメニューの表示・非表示を切り替えるJavaScript
-document.addEventListener('DOMContentLoaded', function () {
-  const toggleButton = document.getElementById('toggleButton');
-  const menu = document.getElementById('menu');
-
-  toggleButton.addEventListener('click', function () {
-      menu.classList.toggle('active');
-  });
-});
-
 $('.menu-trigger').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('wrap').removeClass('open');
+    $('.wrap').removeClass('open');
     $('nav').removeClass('open');
+    $('.overlay').removeClass('open');
   } else {
     $(this).addClass('active');
-    $('wrap').addClass('open');
+    $('.wrap').addClass('open');
     $('nav').addClass('open');
+    $('.overlay').addClass('open');
   }
 });
 $('.overlay').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
     $('.menu-trigger').removeClass('active');
-    $('wrap').removeClass('open');
+    $('.wrap').removeClass('open');
     $('nav').removeClass('open');      
   }
+});
+
+// 上部遷移ボタン
+$(function() {
+  // 変数にクラスを入れる
+  var btn = $('.button');
+  
+  //スクロールしてページトップから100に達したらボタンを表示
+  $(window).on('load scroll', function(){
+    if($(this).scrollTop() > 100) {
+      btn.addClass('active');
+    }else{
+      btn.removeClass('active');
+    }
+  });
+
+  //スクロールしてトップへ戻る
+  btn.on('click',function () {
+    $('body,html').animate({
+      scrollTop: 0
+    });
+  });
 });
 
 // ひっくり返るカード
@@ -54,6 +68,9 @@ $(function(){
     $(this).toggleClass('flipped')
   });
 });
+
+
+
 
 
 
