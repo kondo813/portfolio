@@ -7,6 +7,17 @@ body a{
   color: inherit;
 }
 
+.header{
+  position: fixed;
+}
+header.open,
+main.open,
+footer.open {
+  transform: translateX(-250px);
+}
+nav.open {
+  transform: translateX(0);
+}
 /* ヘッダー1 */
 .header1 {
   position: fixed;
@@ -325,7 +336,7 @@ body a{
 
 /* ヘッダー３ */
 .header3{
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   z-index: 999;
   width: 100%;
@@ -353,7 +364,7 @@ body a{
 .header4{
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   z-index: 999;
   width: 100%;
@@ -527,7 +538,7 @@ nav ul li a {
 /* ヘッダー５ */
 .header5{
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   z-index: 998;
   top: 120px;
   width: 100%;
