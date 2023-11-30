@@ -23,6 +23,9 @@ nav {
 nav.open {
   transform: translateX(250px);
 }
+.open {
+  transform: translateX(-250px);
+}
 /* ヘッダー1 */
 .header1 {
   position: fixed;
@@ -466,9 +469,6 @@ nav.open {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.wrap.open {
-  transform: translateX(-250px);
 }
 .menu-trigger {
   z-index: 100;
