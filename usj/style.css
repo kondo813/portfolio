@@ -810,7 +810,7 @@ main{
   max-width: 1300px;
 }
 .picup h2{
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 30px;
   font-size: 32px;
   font-weight: 800;
@@ -1108,7 +1108,6 @@ main{
   width: 85%;
   margin: 0 auto;
   margin-top: 60px;
-  padding-left: 45px;
   font-size: 36px;
   font-weight: 800;
   max-width: 1500px;
