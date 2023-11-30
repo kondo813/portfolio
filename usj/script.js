@@ -19,24 +19,22 @@ header2Triggers.forEach(header2Trigger => {
 });
 
 $('.menu-trigger').on('click',function(){
-  // document.documentElement.style.overflow = 'hidden';
-  // document.body.style.overflow = 'hidden';
   if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('.wrap').removeClass('open');
     $('nav').removeClass('open');
-    $('.overlay').removeClass('open');
-    $('.header').removeClass('open');
-    $('.main').removeClass('open');
-    $('.fotter').removeClass('open');
+    $('header').removeClass('open');
+    $('main').removeClass('open');
+    $('footer').removeClass('open');
+    document.documentElement.style.overflow = 'scroll';
+    document.body.style.overflow = 'scroll';
   } else {
     $(this).addClass('active');
-    $('.wrap').addClass('open');
     $('nav').addClass('open');
-    $('.overlay').addClass('open');
-    $('.header').addClass('open');
-    $('.main').addClass('open');
-    $('.fotter').addClass('open');
+    $('header').addClass('open');
+    $('main').addClass('open');
+    $('footer').addClass('open');
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
   }
 });
 $('.overlay').on('click',function(){
@@ -45,11 +43,11 @@ $('.overlay').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
     $('.menu-trigger').removeClass('active');
-    $('.wrap').removeClass('open');
+    // $('.wrap').removeClass('open');
     $('nav').removeClass('open'); 
     $('.header').removeClass('open');
     $('.main').removeClass('open');
-    $('.fotter').removeClass('open');   
+    $('.footer').removeClass('open');   
   }
 });
 
@@ -80,4 +78,16 @@ $(function(){
   $('.picup_content').on('click',function(){
     $(this).toggleClass('flipped')
   });
+});
+
+
+
+document.getElementById('mobile-menu').addEventListener('click', function() {
+  var navList = document.querySelector('.nav-list');
+  navList.classList.toggle('show');
+});
+
+document.getElementById('close-menu').addEventListener('click', function() {
+  var navList = document.querySelector('.nav-list');
+  navList.classList.remove('show');
 });
