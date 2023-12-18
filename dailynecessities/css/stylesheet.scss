@@ -1,0 +1,361 @@
+body{
+  background-color: #FFFFFF;
+  font-family: Helvetica, 'Helvetica Neue', yu-gothic-pr6n, sans-serif!important;
+}
+header{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  z-index: 997;
+  background-color: #FFFFFF;
+  height: 77px;
+  padding-left: 40px;
+  padding-right: 40px;
+  @media screen and (max-width: 699px) {
+    padding-right: 20px;
+    height: 55px;
+  }
+  .header_right0{
+    display: none;
+    @media screen and (max-width: 999px) {
+      display: block;
+    }
+  }
+  .header_right{
+    display: flex;
+    margin-top: 5px;
+  }
+  img{
+    &.header_logo{
+      width: 260px;
+      height: 50px;
+      margin-top: 8px;
+      @media screen and (max-width: 699px) {
+        width: 180px;
+        height: 33px;
+        margin-top: 7px;
+      }
+    }
+    &.reserch_icon{
+      width: 38px;
+      height: 38px;
+      margin-top: 20px;
+      @media screen and (max-width: 699px) {
+        margin-top: 10px;
+      }
+    }
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+    li{
+      margin-left: 40px;
+      font-size: 15px;
+      a{
+        text-decoration: none;
+        color: #606060;
+        line-height: 70px;
+        position: relative;
+      }
+      a::before {
+        content: '';
+        position: absolute;
+        bottom: -29px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #454545;
+        transform-origin: left; /* 左から右にアニメーションするために左を基準にする */
+        transform: scaleX(0); /* 初期状態で非表示にする */
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      a:hover::before {
+        transform: scaleX(1); /* ホバー時にアンダーラインを左から右に表示する */
+      }
+    }
+    @media screen and (max-width: 999px) {
+      display: none;
+    }
+  }
+}
+.openbtn{
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+.carousel{
+  margin-top: 77px;
+  @media screen and (max-width: 699px) {
+    margin-top: 55px;
+  }
+}
+.store_description_wrap{
+  background-color: #FAF7F5;
+  .store_description{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 20px;
+    @media screen and (max-width: 999px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    p{
+      font-size: 16px;
+      color: rgb(96, 96, 96);
+      max-width: 700px;
+      margin: 0 auto;
+      @media screen and (max-width: 999px) {
+        font-size: 14px;
+      }
+      .sp_br{
+        display: none;
+        @media screen and (max-width: 999px) {
+          display: block;
+        }
+      }
+    }
+    p:nth-child(n+2){
+      margin-top: 20px;
+    }
+  }
+}
+.new_wrap{
+  .news{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2{
+      font-size: 23px;
+      font-weight: 400;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    .news_card_wrap{
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 65px;
+      margin-bottom: 110px;
+      margin-left: 40px;
+      margin-right: 40px;
+      @media screen and (max-width: 999px) {
+        overflow-x: scroll;
+        justify-content: flex-start; /* 左端に寄せる */
+        gap: 30px;
+        margin-left: 20px;
+        margin-right: 0;
+        &::-webkit-scrollbar {
+          display: none; /* スクロールバーを非表示にする */
+        }
+      }
+      .news_card{
+        width: 380px;
+        @media screen and (max-width: 999px) {
+          flex-shrink: 0;
+          width: 280px;
+        }
+        @media screen and (max-width: 699px) {
+          width: 75%;
+        }
+        .news_img_wrap{
+          width: 100%;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: 250px;
+          }
+          img:hover{
+            transform:scale(1.1,1.1);
+            transition:0.5s all;
+          }
+        }
+        h3{
+          margin-top: 18px;
+          color: #606060;
+          font-weight: 400;
+          width: fit-content;
+          text-decoration: none;
+          text-decoration: underline;
+          text-decoration-color: #606060;
+          text-underline-offset: 4px;
+          text-decoration-thickness: 0.8px;
+        }
+        p{
+          margin-top: 18px;
+          a {
+            position: relative;
+            color: #606060;
+            text-decoration: none;
+            text-decoration-thickness: 0.8px;
+            text-decoration-color: #606060;
+            text-underline-offset: 4px;
+          }
+          a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #606060;
+            transform-origin: left;
+            transition: transform 0.3s ease-in-out;
+            transform: scaleX(1); /* 初期状態で表示されている */
+          }
+          a:hover::before {
+            transform: scaleX(0); /* ホバー時にアンダーラインを右から消す */
+          }
+        }
+      }
+    }
+  }
+}
+.store_wrap{
+  background-color: #FAF7F4;
+  .store{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2{
+      font-weight: 400;
+      width: fit-content;
+      margin: 0 auto;
+      color: #7B7B7B;
+    }
+    img{
+      width: 100%;
+      height: 400px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      object-fit: cover;
+    }
+  }
+}
+.story_wrap{
+  .story{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2{
+      color: #606060;
+      font-weight: 400;
+      width: fit-content;
+      margin: 0 auto;
+      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-color: #606060;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 0.8px;
+    }
+    .story_card_wrap{
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 65px;
+      margin-bottom: 100px;
+      margin-left: 40px;
+      margin-right: 40px;
+      @media screen and (max-width: 999px) {
+        flex-wrap: wrap;
+        justify-content: left;
+        column-gap: 20px;
+        row-gap: 60px;
+        margin-left: 35px;
+        margin-right: 25px;
+      }
+      .story_card{
+        width: 380px;
+        @media screen and (max-width: 999px) {
+          width: 48%;
+        }
+        @media screen and (max-width: 699px) {
+          width: 100%;
+        }
+        .story_img_wrap{
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: 250px;
+          }
+          img:hover{
+            transform:scale(1.1,1.1);
+            transition:0.5s all;
+          }
+        }
+        h2{
+          font-size: 16px;
+          margin: 0;
+          margin-top: 20px;
+          @media screen and (max-width: 699px) {
+            font-size: 14px;
+          }
+        }
+        p{
+          color: #606060;
+          font-size: 16px;
+          margin-top: 18px;
+          @media screen and (max-width: 699px) {
+            font-size: 14px;
+          }
+          a {
+            position: relative;
+            color: #606060;
+            text-decoration: none;
+            text-decoration-thickness: 0.8px;
+            text-decoration-color: #606060;
+            text-underline-offset: 4px;
+          }
+          a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: #606060;
+            transform-origin: left;
+            transition: transform 0.3s ease-in-out;
+            transform: scaleX(1); /* 初期状態で表示されている */
+          }
+          a:hover::before {
+            transform: scaleX(0); /* ホバー時にアンダーラインを右から消す */
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  background-color: #FAF7F4;
+  ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #909090A6;
+      transition: color 0.3s ease-in-out;
+      img{
+        width: 30px;
+        height: 30px;
+        margin-top: -5px;
+      }
+    }
+    a:hover {
+      color: #6f6d6d; /* ホバー時の色を指定 */
+    }
+
+
+  }
+  p{
+    text-align: center;
+    color: #909090A6;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 12.6px;
+  }
+}

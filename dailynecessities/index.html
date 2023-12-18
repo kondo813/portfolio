@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- 互換表示をさせないために設定するmetaタグ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Necessities</title>
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/btn.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/humbrger_menu.css">
+  </head>
+  <body>
+    <header>
+      <div class="header_right0"></div>
+      <div class="header_right">
+        <h1 alt="standardproductsロゴ"><a href=""><img src="img/logo.svg" class="header_logo"></a></h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="">NEWS</a>
+            </li>
+            <li>
+              <a href="">STORE</a>
+            </li>
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="">STORY</a>
+            </li>
+            <li>
+              <a href="">INSTAGRAM</a>
+            </li>
+            <li>
+              <a href="">COMMUNITY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <img src="img/research_icon.png" class="reserch_icon">
+    </header>
+    <div class="openbtn" onclick="animateListItems()"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+    <ul>
+    <li class="list-01"><a href="#">News</a></li> 
+    <li class="list-02"><a href="#">Store</a></li> 
+    <li class="list-03"><a href="#">About</a></li> 
+    <li class="list-04"><a href="#">Story</a></li> 
+    <li class="list-05"><a href="#">Instagram</a></li> 
+    <li class="list-06"><a href="#">Community</a></li> 
+    </ul>
+    </nav>
+    <div class="overlay"></div>
+    <div class="carousel">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="carouselSlide" style="background-image: url(img/slider1.png); background-size: cover; background-position: center;">
+          </div>
+          <div class="swiper-slide" style="background-image: url(img/slider2.png); background-size: cover; background-position: center;">
+            <div class="slider-description">
+              <p>STORY</p>
+              <h2>ミナソープの生みの親がつくるスキンケアシリーズ</h2>
+              <p><a href="">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="circle-wrap">
+              <div class="circle">
+                <div class="circle_inner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="circle-wrap">
+              <div class="circle">
+                <div class="circle_inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="store_description_wrap">
+        <section class="store_description">
+          <p>スタンダードであること。</p>
+          <p>余計な飾りや個性は省いていく。<br>
+            そのかわり品質や使い勝⼿は、<br class="sp_br">できる限り⾼めていく。<br>
+            それが、Standard Products。</p>
+          <p>たとえばカトラリーには⾦属加⼯産業の町、<br class="sp_br">新潟県の燕市を。<br>
+            包丁には800年以上の刀剣づくりの歴史がある、<br class="sp_br">岐阜県の関市を。</p>
+          <p>ものに対する誠実な姿勢を貫くことで、<br>
+            お客さまに届けていきたい「ちょっといい」<br class="sp_br">という実感。<br>
+            それが「ずっといい」になるように。<br>
+            私たちだからできるスタンダードを、<br class="sp_br">つくり続けていきます。</p>
+          <p>ちょっといいのが、ずっといい。</p>
+          </section>
+      </div>
+      <section>
+        <div class="new_wrap">
+          <div class="news">
+            <h2>NEWS</h2>
+            <div class="news_card_wrap">
+              <section class="news_card">
+                <div class="news_img_wrap">
+                  <img src="img/news1.svg">
+                </div>
+                <h3><a href="">12月出店情報</a></h3>
+                <p><a href="">Read more</a></p>
+              </section>
+              <section class="news_card">
+                <div class="news_img_wrap">
+                  <img src="img/news2.png">
+                </div>
+                <h3><a href="">12 月 8 日(金)より Standard Products ギフトキャンペーンがスタート</a></h3>
+                <p><a href="">Read more</a></p>
+              </section>
+              <section class="news_card">
+                <div class="news_img_wrap">
+                  <img src="img/news3.png">
+                </div>
+                <h3><a href="">初のフェイスケアシリーズが全国で発売スタート</a></h3>
+                <p><a href="">Read more</a></p>
+              </section>
+            </div>
+            <div class="button"><a href="#" class="btn bgleft"><span>VIEW ALL</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="store_wrap">
+          <div class="store">
+            <h2>STORE</h2>
+            <img src="img/store1.png">
+            <a href="#" class="btn bgleft"><span>SEARCH</span></a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="story_wrap">
+          <div class="story">
+            <h2>STORY</h2>
+            <div class="story_card_wrap">
+              <section class="story_card">
+                <div class="story_img_wrap">
+                  <img src="img/story1.png">
+                </div>
+                <h2><a href="">ミナソープの生みの親がつくるスキンケアシリーズ</a></h2>
+                <p>累計230万個以上の売り上げを誇るピーリング用石けん「ミナソープ」を手がけた、美容研究のスペシャリスト進製作所。こだわりのスキンケア商品をご紹介いたします。</p>
+                <p><a href="">Read more</a></p>
+              </section>
+              <section class="story_card">
+                <div class="story_img_wrap">
+                  <img src="img/story2.jpg">
+                </div>
+                <h2><a href="">「日本で一番大切にしたい会社」がつくるお絵かき道具</a></h2>
+                <p>神奈川県川崎市にある日本理化学工業さん。全スタッフのおよそ7割が知的障がいをもちながら働いています。奇跡の工場がつくる不思議なお絵かき道具のご紹介をいたします。</p>
+                <p><a href="">Read more</a></p>
+              </section>
+              <section class="story_card">
+                <div class="story_img_wrap">
+                  <img src="img/story3.jpg">
+                </div>
+                <h2><a href="">昔ながらの釜焚き製法でつくる洗濯洗剤</a></h2>
+                <p>純石けんを配合した洗濯洗剤とナチュラルな仕上げの柔軟剤です。洗いやすさはもちろん環境配慮や価格帯など、あらゆる面でバランスのとれた商品づくりを目指しました。</p>
+                <p><a href="">Read more</a></p>
+              </section>
+            </div>
+            <a href="#" class="btn bgleft"><span>VIEW ALL</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="">NEWS</a></li>
+        <li><a href="">STORE</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">STORY</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_icon.png"></a></li>
+      </ul>
+      <p>&copy;2023 Daiso Industries Co., Ltd.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
+  </body>
+</html>
