@@ -67,3 +67,30 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', updateBackground);
   updateBackground(); // 初回の背景更新
 });
+
+
+// 検索フォーム
+const searchIcon = document.getElementById('search-icon');
+const searchForm = document.getElementById('search-form');
+const closeSearch = document.getElementById('close-search');
+const overlay = document.getElementById('overlay');
+
+function toggleSearchForm() {
+  if (searchForm.classList.contains('active')) {
+    searchForm.classList.remove('active');
+    setTimeout(() => { searchForm.style.display = 'none'; }, 500); // Wait for animation to finish
+    overlay.style.display = 'none';
+  } else {
+    searchForm.style.display = 'block'; // Display block before sliding down
+    overlay.style.display = 'block';
+    setTimeout(() => { searchForm.classList.add('active'); }, 10); // Delay to allow display change to take effect
+  }
+}
+
+searchIcon.addEventListener('click', toggleSearchForm);
+closeSearch.addEventListener('click', toggleSearchForm);
+overlay.addEventListener('click', toggleSearchForm);
+
+searchForm.addEventListener('click', function(event) {
+  event.stopPropagation(); // Prevent click inside the search form from closing it
+});

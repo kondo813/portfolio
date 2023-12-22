@@ -19,7 +19,7 @@
     <header>
       <div class="header_right0"></div>
       <div class="header_right">
-        <h1 alt="standardproductsロゴ"><a href=""><img src="img/logo.svg" class="header_logo"></a></h1>
+        <h1><a href=""><img src="img/logo.svg" class="header_logo" alt="DailyNecessitiesロゴ"></a></h1>
         <nav>
           <ul>
             <li>
@@ -43,8 +43,19 @@
           </ul>
         </nav>
       </div>
-      <img src="img/research_icon.png" class="reserch_icon">
+      <div id="navbar">
+        <img src="img/search_icon.png" id="search-icon" alt="検索">
+      </div>
     </header>
+
+    <div id="overlay"></div>
+    <div id="search-form">
+      <img src="img/search_icon.png" id="search-icon" alt="検索">
+      <input type="text" placeholder="Search for...">
+      <img src="img/close_icon.png" id="close-search" alt="閉じる">
+    </div>
+
+
     <div class="openbtn" onclick="animateListItems()"><span></span><span></span><span></span></div>
     <nav id="g-nav">
     <ul>
@@ -92,7 +103,7 @@
     </div>
     <main>
       <div class="store_description_wrap">
-        <section class="store_description">
+        <div class="store_description">
           <p>スタンダードであること。</p>
           <p>余計な飾りや個性は省いていく。<br>
             そのかわり品質や使い勝⼿は、<br class="sp_br">できる限り⾼めていく。<br>
@@ -104,35 +115,35 @@
             それが「ずっといい」になるように。<br>
             私たちだからできるスタンダードを、<br class="sp_br">つくり続けていきます。</p>
           <p>ちょっといいのが、ずっといい。</p>
-          </section>
+          </div>
       </div>
       <section>
         <div class="new_wrap">
           <div class="news">
             <h2>NEWS</h2>
-            <div class="news_card_wrap">
-              <section class="news_card">
+            <ul class="news_card_wrap">
+              <li class="news_card">
                 <div class="news_img_wrap">
-                  <img src="img/news1.png">
+                  <img src="img/news1.png" alt="ニュース画像１">
                 </div>
                 <h3><a href="">12月出店情報</a></h3>
                 <p><a href="">Read more</a></p>
-              </section>
-              <section class="news_card">
+              </li>
+              <li class="news_card">
                 <div class="news_img_wrap">
-                  <img src="img/news2.png">
+                  <img src="img/news2.png" alt="ニュース画像２">
                 </div>
                 <h3><a href="">12 月 8 日(金)より Standard Products ギフトキャンペーンがスタート</a></h3>
                 <p><a href="">Read more</a></p>
-              </section>
-              <section class="news_card">
+              </li>
+              <li class="news_card">
                 <div class="news_img_wrap">
-                  <img src="img/news3.png">
+                  <img src="img/news3.png" alt="ニュース画像３">
                 </div>
                 <h3><a href="">初のフェイスケアシリーズが全国で発売スタート</a></h3>
                 <p><a href="">Read more</a></p>
-              </section>
-            </div>
+              </li>
+            </ul>
             <div class="button"><a href="#" class="btn bgleft"><span>VIEW ALL</span></a></div>
           </div>
         </div>
@@ -141,7 +152,7 @@
         <div class="store_wrap">
           <div class="store">
             <h2>STORE</h2>
-            <img src="img/store1.png">
+            <img src="img/store1.png" alt="店内写真">
             <a href="#" class="btn bgleft"><span>SEARCH</span></a>
           </div>
         </div>
@@ -150,32 +161,32 @@
         <div class="story_wrap">
           <div class="story">
             <h2>STORY</h2>
-            <div class="story_card_wrap">
-              <section class="story_card">
+            <ul class="story_card_wrap">
+              <li class="story_card">
                 <div class="story_img_wrap">
-                  <img src="img/story1.png">
+                  <img src="img/story1.png" alt="ストーリー画像１">
                 </div>
-                <h2><a href="">ミナソープの生みの親がつくるスキンケアシリーズ</a></h2>
+                <h3><a href="">ミナソープの生みの親がつくるスキンケアシリーズ</a></h3>
                 <p>累計230万個以上の売り上げを誇るピーリング用石けん「ミナソープ」を手がけた、美容研究のスペシャリスト進製作所。こだわりのスキンケア商品をご紹介いたします。</p>
                 <p><a href="">Read more</a></p>
-              </section>
-              <section class="story_card">
+              </li>
+              <li class="story_card">
                 <div class="story_img_wrap">
-                  <img src="img/story2.jpg">
+                  <img src="img/story2.jpg" alt="ストーリー画像２">
                 </div>
-                <h2><a href="">「日本で一番大切にしたい会社」がつくるお絵かき道具</a></h2>
+                <h3><a href="">「日本で一番大切にしたい会社」がつくるお絵かき道具</a></h3>
                 <p>神奈川県川崎市にある日本理化学工業さん。全スタッフのおよそ7割が知的障がいをもちながら働いています。奇跡の工場がつくる不思議なお絵かき道具のご紹介をいたします。</p>
                 <p><a href="">Read more</a></p>
-              </section>
-              <section class="story_card">
+              </li>
+              <li class="story_card">
                 <div class="story_img_wrap">
-                  <img src="img/story3.jpg">
+                  <img src="img/story3.jpg" alt="ストーリー画像３">
                 </div>
-                <h2><a href="">昔ながらの釜焚き製法でつくる洗濯洗剤</a></h2>
+                <h3><a href="">昔ながらの釜焚き製法でつくる洗濯洗剤</a></h3>
                 <p>純石けんを配合した洗濯洗剤とナチュラルな仕上げの柔軟剤です。洗いやすさはもちろん環境配慮や価格帯など、あらゆる面でバランスのとれた商品づくりを目指しました。</p>
                 <p><a href="">Read more</a></p>
-              </section>
-            </div>
+              </li>
+            </ul>
             <a href="#" class="btn bgleft"><span>VIEW ALL</span></a>
           </div>
         </div>
@@ -187,7 +198,7 @@
         <li><a href="">STORE</a></li>
         <li><a href="">ABOUT</a></li>
         <li><a href="">STORY</a></li>
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_icon.png"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_icon.png" alt="インスタグラムのアイコン"></a></li>
       </ul>
       <p>&copy;2023 Daiso Industries Co., Ltd.</p>
     </footer>
