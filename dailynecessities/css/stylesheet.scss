@@ -85,8 +85,8 @@ header{
     position: fixed;   /* 画面を固定する */
     width: 100%;       /* 全幅を維持 */
 }
-
 }
+
 // 検索フォーム
 #navbar {
   padding: 10px;
@@ -100,7 +100,8 @@ header{
   width: 20px;
 }
 
-#overlay {
+
+#search_overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -108,7 +109,7 @@ header{
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.5);
-  z-index: 999; 
+  z-index: 990; 
 }
 
 #search-form {
@@ -121,7 +122,7 @@ header{
   background: #FAF7F5;
   height: 74px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  z-index: 75;
+  z-index: 997;
   overflow: hidden;
   transition: transform 0.3s ease; /* Animate the transform property */
   transform: translateY(-100%); /* Start hidden above the viewport */
@@ -168,6 +169,16 @@ header{
   @media screen and (min-width: 1000px) {
     display: none;
   }
+}
+.menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 998; 
 }
 .carousel{
   margin-top: 77px;

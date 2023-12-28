@@ -2,17 +2,17 @@
 const searchIcon = document.getElementById('search-icon');
 const searchForm = document.getElementById('search-form');
 const closeSearch = document.getElementById('close-search');
-const overlay = document.getElementById('overlay');
+const overlay = document.getElementById('search_overlay');
 
 function toggleSearchForm() {
   if (searchForm.classList.contains('active')) {
     searchForm.classList.remove('active');
-    setTimeout(() => { searchForm.style.display = 'none'; }, 500); // Wait for animation to finish
+    setTimeout(() => { searchForm.style.display = 'none'; }, 500); 
     overlay.style.display = 'none';
   } else {
-    searchForm.style.display = 'block'; // Display block before sliding down
+    searchForm.style.display = 'block'; 
     overlay.style.display = 'block';
-    setTimeout(() => { searchForm.classList.add('active'); }, 10); // Delay to allow display change to take effect
+    setTimeout(() => { searchForm.classList.add('active'); }, 10); 
   }
 }
 
@@ -21,7 +21,7 @@ closeSearch.addEventListener('click', toggleSearchForm);
 overlay.addEventListener('click', toggleSearchForm);
 
 searchForm.addEventListener('click', function(event) {
-  event.stopPropagation(); // Prevent click inside the search form from closing it
+  event.stopPropagation(); 
 });
 
 // ハンバーガーメニュー
@@ -29,7 +29,9 @@ $(document).ready(function() {
   $(".openbtn").click(function () {
       $(this).toggleClass('active');
       $("#g-nav").toggleClass('panelactive');
-
+      $(".menu_overlay").fadeToggle(); 
+      $(".menu_overlay").css('display', 'block'); 
+      
       // bodyのスクロールをトグルする
       if ($('body').hasClass('noscroll')) {
           enableScroll();
@@ -39,10 +41,11 @@ $(document).ready(function() {
           $('body').addClass('noscroll');
       }
   });
-  $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+  $("#g-nav a, .menu_overlay").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-});
+    $(".menu_overlay").fadeOut();
+  });
 });
 
 // スクロールを無効
