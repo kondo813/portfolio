@@ -8,7 +8,7 @@ header{
   justify-content: space-between;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
   background-color: #FFFFFF;
   height: 77px;
   padding-left: 40px;
@@ -80,6 +80,12 @@ header{
       display: none;
     }
   }
+  .noscroll {
+    overflow: hidden; /* スクロールを無効にする */
+    position: fixed;   /* 画面を固定する */
+    width: 100%;       /* 全幅を維持 */
+}
+
 }
 // 検索フォーム
 #navbar {
@@ -102,7 +108,7 @@ header{
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.5);
-  z-index: 50; 
+  z-index: 999; 
 }
 
 #search-form {
@@ -233,6 +239,9 @@ header{
       }
       .news_card{
         width: 380px;
+        opacity: 0; /* 初期状態では透明 */
+        transform: translateY(30px); /* 初期状態では少し下にずらす */
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
         @media screen and (max-width: 999px) {
           flex-shrink: 0;
           width: 280px;
@@ -246,10 +255,6 @@ header{
           overflow: hidden;
           img{
             width: 100%;
-            transition: 0.3s all;
-          }
-          img:hover{
-            transform:scale(1.1,1.1);
           }
         }
         h3{
@@ -292,6 +297,14 @@ header{
             transform: scaleX(0); /* ホバー時にアンダーラインを右から消す */
           }
         }
+      }
+      .news_card:hover .news_img_wrap img {
+        transform: scale(1.1);
+        transition: 0.3s all;
+      }
+      .news_card.fade-in {
+        opacity: 1; /* フェードイン完了時の透明度 */
+        transform: translateY(0); /* 元の位置に戻す */
       }
     }
   }
@@ -352,6 +365,9 @@ header{
       }
       .story_card{
         width: 380px;
+        opacity: 0; /* 初期状態では透明 */
+        transform: translateY(30px); /* 初期状態では少し下にずらす */
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
         @media screen and (max-width: 999px) {
           width: 48%;
         }
@@ -420,6 +436,14 @@ header{
             transform: scaleX(0); /* ホバー時にアンダーラインを右から消す */
           }
         }
+      }
+      .story_card:hover .story_img_wrap img {
+        transform: scale(1.1);
+        transition: 0.3s all;
+      }
+      .story_card.fade-in {
+        opacity: 1; /* フェードイン完了時の透明度 */
+        transform: translateY(0); /* 元の位置に戻す */
       }
     }
   }

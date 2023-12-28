@@ -1,13 +1,67 @@
-// ハンバーガーメニュー
-$(".openbtn").click(function () {//ボタンがクリックされたら
-	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+// 検索フォーム
+const searchIcon = document.getElementById('search-icon');
+const searchForm = document.getElementById('search-form');
+const closeSearch = document.getElementById('close-search');
+const overlay = document.getElementById('overlay');
+
+function toggleSearchForm() {
+  if (searchForm.classList.contains('active')) {
+    searchForm.classList.remove('active');
+    setTimeout(() => { searchForm.style.display = 'none'; }, 500); // Wait for animation to finish
+    overlay.style.display = 'none';
+  } else {
+    searchForm.style.display = 'block'; // Display block before sliding down
+    overlay.style.display = 'block';
+    setTimeout(() => { searchForm.classList.add('active'); }, 10); // Delay to allow display change to take effect
+  }
+}
+
+searchIcon.addEventListener('click', toggleSearchForm);
+closeSearch.addEventListener('click', toggleSearchForm);
+overlay.addEventListener('click', toggleSearchForm);
+
+searchForm.addEventListener('click', function(event) {
+  event.stopPropagation(); // Prevent click inside the search form from closing it
 });
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+// ハンバーガーメニュー
+$(document).ready(function() {
+  $(".openbtn").click(function () {
+      $(this).toggleClass('active');
+      $("#g-nav").toggleClass('panelactive');
+
+      // bodyのスクロールをトグルする
+      if ($('body').hasClass('noscroll')) {
+          enableScroll();
+          $('body').removeClass('noscroll');
+      } else {
+          disableScroll();
+          $('body').addClass('noscroll');
+      }
+  });
+  $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+});
+
+// スクロールを無効
+function disableScroll() {
+  // スクロール位置を取得
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+  // スクロールを固定する（スクロールイベント時に元の位置に戻す）
+  window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+// スクロールを再び有効
+function enableScroll() {
+  window.onscroll = null;
+}
+
 
 function animateListItems() {
   var fade = ['.list-01', '.list-02', '.list-03', '.list-04', '.list-05', '.list-06'];
@@ -20,9 +74,7 @@ function animateListItems() {
   });
 }
 
-
-
-
+// スライダー
 'use strict'
 window.onload = function () {
   const swiper = new Swiper('.mySwiper', {
@@ -69,28 +121,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// 検索フォーム
-const searchIcon = document.getElementById('search-icon');
-const searchForm = document.getElementById('search-form');
-const closeSearch = document.getElementById('close-search');
-const overlay = document.getElementById('overlay');
+// news,storyアニメーション
+document.addEventListener("DOMContentLoaded", function() {
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+      if(entry.isIntersecting) {
+        // setTimeoutを使用して時間差フェードインを適用
+        setTimeout(() => {
+          entry.target.classList.add('fade-in');
+        }, 150 * index); // 200msごとに遅延させる
 
-function toggleSearchForm() {
-  if (searchForm.classList.contains('active')) {
-    searchForm.classList.remove('active');
-    setTimeout(() => { searchForm.style.display = 'none'; }, 500); // Wait for animation to finish
-    overlay.style.display = 'none';
-  } else {
-    searchForm.style.display = 'block'; // Display block before sliding down
-    overlay.style.display = 'block';
-    setTimeout(() => { searchForm.classList.add('active'); }, 10); // Delay to allow display change to take effect
-  }
-}
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.1});
 
-searchIcon.addEventListener('click', toggleSearchForm);
-closeSearch.addEventListener('click', toggleSearchForm);
-overlay.addEventListener('click', toggleSearchForm);
-
-searchForm.addEventListener('click', function(event) {
-  event.stopPropagation(); // Prevent click inside the search form from closing it
+  // 各ニュースカードを監視対象に追加
+  document.querySelectorAll('.news_card').forEach((card) => {
+    observer.observe(card);
+  });
+  // 各ニュースカードを監視対象に追加
+  document.querySelectorAll('.story_card').forEach((card) => {
+    observer.observe(card);
+  });
 });
+
